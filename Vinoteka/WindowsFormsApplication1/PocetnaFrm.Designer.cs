@@ -123,7 +123,7 @@
             this.label1.TabIndex = 7;
             this.label1.Text = "FOI - 2013 Team Dignitas  ® All rights reserved";
             // 
-            // Pocetna
+            // PocetnaFrm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -139,8 +139,9 @@
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.MaximizeBox = false;
-            this.Name = "Pocetna";
+            this.Name = "PocetnaFrm";
             this.Text = "Vinoteka";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.PocetnaFrm_FormClosed);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

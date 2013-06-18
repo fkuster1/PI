@@ -44,7 +44,7 @@ namespace WindowsFormsApplication1
 
         ~Baza()
         {
-            Connection.Close();
+            //Connection.Close();
             Connection = null;
         }
 

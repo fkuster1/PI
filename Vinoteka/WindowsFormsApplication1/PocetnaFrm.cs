@@ -44,5 +44,10 @@ namespace WindowsFormsApplication1
             var forma2 = new PosloviFrm();
             forma2.Show();
         }
+
+        private void PocetnaFrm_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Baza.Instance.Connection.Close();
+        }
     }
 }
