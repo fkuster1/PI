@@ -28,8 +28,8 @@ namespace WindowsFormsApplication1
         {
             bacve.Proizvodac = proizvodac.Text;
             bacve.Zapremnina = Convert.ToInt32(zapremnina.Text);
-            bacve.Podrum = podrum.SelectedIndex;
-            bacve.Vrsta = vrsta.SelectedIndex;
+            bacve.Podrum = (int)podrum.SelectedValue;
+            bacve.Vrsta = (int)vrsta.SelectedValue;
             bacve.DatumKupnje = datum.Value.ToShortDateString();
             bacve.UnesiBacvu();
         }
