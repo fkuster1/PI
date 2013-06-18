@@ -15,7 +15,9 @@ namespace WindowsFormsApplication1
         public PodrumiFrm()
         {
             InitializeComponent();
-            podrum = new Podrum();
+            podrum = new Podrum(); 
+            string idVina = (string)Baza.Instance.DohvatiVrijednost("select top 1 Adresa from Podrum order by Id desc;");
+            label2.Text = idVina;
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -28,6 +30,8 @@ namespace WindowsFormsApplication1
             podrum.Adresa = adresa.Text;
             podrum.BrojMjesta = Convert.ToInt32(brojmjesta.Text);
             podrum.UnesiPodrum();
+            string idVina = (string)Baza.Instance.DohvatiVrijednost("select top 1 Adresa from Podrum order by Id desc;");
+            label2.Text = idVina;
         }
     }
 }

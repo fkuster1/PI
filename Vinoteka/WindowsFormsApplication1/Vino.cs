@@ -40,7 +40,7 @@ namespace WindowsFormsApplication1
         public void UnesiVino()
         {
             Baza.Instance.IzvrsiUpit("insert into Vino values(default, " + GodinaProizvodnje + ", " + Kolicina + ", " + VrstaVina + ", " + Kiselina + ", " + Alkohol + ");");
-            int idVina = (int)Baza.Instance.DohvatiVrijednost("select Id from Vino order by Id desc limit 1;");
+            int idVina = (int)Baza.Instance.DohvatiVrijednost("select top 1 Id from Vino order by Id desc;");
             foreach (int vino in vinoJeOdLoze)
             {
                 Baza.Instance.IzvrsiUpit("insert into Vino_je_od values(" + idVina + ", " + vino + ");");

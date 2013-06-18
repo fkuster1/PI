@@ -34,11 +34,11 @@
             this.label3 = new System.Windows.Forms.Label();
             this.adresa = new System.Windows.Forms.TextBox();
             this.broj_cokota = new System.Windows.Forms.TextBox();
-            this.datumSadnje = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
-            this.button3 = new System.Windows.Forms.Button();
+            this.datumSadnje = new System.Windows.Forms.DateTimePicker();
+            this.label4 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -90,14 +90,6 @@
             this.broj_cokota.Size = new System.Drawing.Size(195, 20);
             this.broj_cokota.TabIndex = 4;
             // 
-            // datumSadnje
-            // 
-            this.datumSadnje.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.datumSadnje.Location = new System.Drawing.Point(111, 115);
-            this.datumSadnje.Name = "datumSadnje";
-            this.datumSadnje.Size = new System.Drawing.Size(195, 20);
-            this.datumSadnje.TabIndex = 5;
-            // 
             // button1
             // 
             this.button1.BackColor = System.Drawing.SystemColors.ControlDark;
@@ -130,15 +122,21 @@
             this.label6.TabIndex = 13;
             this.label6.Text = "FOI - 2013 Team Dignitas  ® All rights reserved";
             // 
-            // button3
+            // datumSadnje
             // 
-            this.button3.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.button3.Location = new System.Drawing.Point(416, 267);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(200, 31);
-            this.button3.TabIndex = 14;
-            this.button3.Text = "Dodaj vinovu lozu";
-            this.button3.UseVisualStyleBackColor = false;
+            this.datumSadnje.Location = new System.Drawing.Point(111, 122);
+            this.datumSadnje.Name = "datumSadnje";
+            this.datumSadnje.Size = new System.Drawing.Size(195, 20);
+            this.datumSadnje.TabIndex = 14;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(26, 182);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(35, 13);
+            this.label4.TabIndex = 15;
+            this.label4.Text = "label4";
             // 
             // vinogradFrm
             // 
@@ -146,11 +144,11 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(663, 371);
-            this.Controls.Add(this.button3);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.datumSadnje);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.datumSadnje);
             this.Controls.Add(this.broj_cokota);
             this.Controls.Add(this.adresa);
             this.Controls.Add(this.label3);
@@ -171,7 +169,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox adresa;
         private System.Windows.Forms.TextBox broj_cokota;
-        private System.Windows.Forms.TextBox datumSadnje;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.DataGridViewTextBoxColumn iDDataGridViewTextBoxColumn;
@@ -179,7 +176,8 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn brojcokotaDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn vrijemesadnjeDataGridViewTextBoxColumn;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.DateTimePicker datumSadnje;
+        private System.Windows.Forms.Label label4;
 
 
     }

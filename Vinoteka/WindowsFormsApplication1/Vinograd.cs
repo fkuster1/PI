@@ -24,7 +24,7 @@ namespace WindowsFormsApplication1
         }
         public void UnesiVinograd()
         {
-            Baza.Instance.IzvrsiUpit("insert into Vinograd values(default, '" + Adresa + "', " + BrojCokota + ", '" + DatumSadnje + "');");
+            Baza.Instance.IzvrsiUpit("insert into Vinograd (Adresa, Broj_cokota, Vrijeme_sadnje) values('" + Adresa + "', " + BrojCokota + ", '" + DatumSadnje + "');");
         }
     }
 }
