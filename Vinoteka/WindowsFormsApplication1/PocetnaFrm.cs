@@ -67,5 +67,11 @@ namespace WindowsFormsApplication1
             var forma4 = new UnosVinoveLozeFrm();
             forma4.Show();
         }
+
+        private void button10_Click(object sender, EventArgs e)
+        {
+            var forma4 = new VinoUBacvamaFrm();
+            forma4.Show();
+        }
     }
 }

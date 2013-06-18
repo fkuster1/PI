@@ -34,21 +34,35 @@ namespace WindowsFormsApplication1
             
         }
 
-        private void label10_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void button4_Click(object sender, EventArgs e)
         {
             Close();
         }
 
-
         private void dataGridView3_SelectionChanged(object sender, EventArgs e)
         {
             int podrum = (int)dataGridView3.CurrentRow.Cells[0].Value;
             this.bacveTableAdapter.PopuniBacve(vinotekaDataSet1.Bacve, podrum);
+        }
+
+        private void popuniVinaPoGodinamaToolStripButton_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                this.vinoTableAdapter.PopuniVinaPoGodinama(this.vinotekaDataSet1.Vino, new System.Nullable<int>(((int)(System.Convert.ChangeType(pocetnaToolStripTextBox.Text, typeof(int))))), new System.Nullable<int>(((int)(System.Convert.ChangeType(zavrsnaToolStripTextBox.Text, typeof(int))))));
+            }
+            catch (System.Exception ex)
+            {
+                System.Windows.Forms.MessageBox.Show(ex.Message);
+            }
+
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            int pocetna = Convert.ToInt32(pocetak.Text);
+            int zavrsna = Convert.ToInt32(kraj.Text);
+            this.vinoTableAdapter.PopuniVinaPoGodinama(vinotekaDataSet1.Vino, pocetna, zavrsna);
         }
     }
 }

@@ -39,7 +39,7 @@ namespace WindowsFormsApplication1
         }
         public void UnesiPosao()
         {
-            Baza.Instance.IzvrsiUpit("insert into Obavljeni_poslovi values(default, " + idVinograda + ", " + VrstaPosla + ", '" + Opis + "', '" + Datum + "', " + Trajanje + ", " + idPodruma + ");");
+            Baza.Instance.IzvrsiUpit("insert into Obavljeni_poslovi (Id_vinograda, Id_posla, Opis, Datum, Trajanje, PodrumId) values(" + idVinograda + ", " + VrstaPosla + ", '" + Opis + "', '" + Datum + "', " + Trajanje + ", " + idPodruma + ");");
         }
     }
 }
