@@ -28,20 +28,29 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(bacveFrm));
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.proizvodac = new System.Windows.Forms.TextBox();
+            this.zapremnina = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
+            this.podrum = new System.Windows.Forms.ComboBox();
+            this.vrsta = new System.Windows.Forms.ComboBox();
+            this.datum = new System.Windows.Forms.DateTimePicker();
+            this.vinotekaDataSet1 = new WindowsFormsApplication1.VinotekaDataSet1();
+            this.podrumBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.podrumTableAdapter = new WindowsFormsApplication1.VinotekaDataSet1TableAdapters.PodrumTableAdapter();
+            this.vrstabacviBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.vrsta_bacviTableAdapter = new WindowsFormsApplication1.VinotekaDataSet1TableAdapters.Vrsta_bacviTableAdapter();
+            ((System.ComponentModel.ISupportInitialize)(this.vinotekaDataSet1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.podrumBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.vrstabacviBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -55,21 +64,21 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Proizvođač";
             // 
-            // textBox1
+            // proizvodac
             // 
-            this.textBox1.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.textBox1.Location = new System.Drawing.Point(127, 68);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(176, 20);
-            this.textBox1.TabIndex = 1;
+            this.proizvodac.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.proizvodac.Location = new System.Drawing.Point(127, 68);
+            this.proizvodac.Name = "proizvodac";
+            this.proizvodac.Size = new System.Drawing.Size(176, 20);
+            this.proizvodac.TabIndex = 1;
             // 
-            // textBox2
+            // zapremnina
             // 
-            this.textBox2.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.textBox2.Location = new System.Drawing.Point(127, 110);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(176, 20);
-            this.textBox2.TabIndex = 3;
+            this.zapremnina.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.zapremnina.Location = new System.Drawing.Point(127, 110);
+            this.zapremnina.Name = "zapremnina";
+            this.zapremnina.Size = new System.Drawing.Size(176, 20);
+            this.zapremnina.TabIndex = 3;
             // 
             // label2
             // 
@@ -82,14 +91,6 @@
             this.label2.TabIndex = 2;
             this.label2.Text = "Zapremnina";
             // 
-            // textBox3
-            // 
-            this.textBox3.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.textBox3.Location = new System.Drawing.Point(127, 155);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(176, 20);
-            this.textBox3.TabIndex = 5;
-            // 
             // label3
             // 
             this.label3.AutoSize = true;
@@ -101,14 +102,6 @@
             this.label3.TabIndex = 4;
             this.label3.Text = "Vrsta";
             // 
-            // textBox4
-            // 
-            this.textBox4.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.textBox4.Location = new System.Drawing.Point(127, 29);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(176, 20);
-            this.textBox4.TabIndex = 7;
-            // 
             // label4
             // 
             this.label4.AutoSize = true;
@@ -119,14 +112,6 @@
             this.label4.Size = new System.Drawing.Size(45, 15);
             this.label4.TabIndex = 6;
             this.label4.Text = "Podrum";
-            // 
-            // textBox5
-            // 
-            this.textBox5.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.textBox5.Location = new System.Drawing.Point(127, 202);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(176, 20);
-            this.textBox5.TabIndex = 9;
             // 
             // label5
             // 
@@ -158,6 +143,7 @@
             this.button1.TabIndex = 11;
             this.button1.Text = "Dodaj bačvu";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
@@ -170,27 +156,83 @@
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
-            // bacve
+            // podrum
+            // 
+            this.podrum.DataSource = this.podrumBindingSource;
+            this.podrum.DisplayMember = "Adresa";
+            this.podrum.FormattingEnabled = true;
+            this.podrum.Location = new System.Drawing.Point(127, 32);
+            this.podrum.Name = "podrum";
+            this.podrum.Size = new System.Drawing.Size(176, 21);
+            this.podrum.TabIndex = 13;
+            this.podrum.ValueMember = "Id";
+            // 
+            // vrsta
+            // 
+            this.vrsta.DataSource = this.vrstabacviBindingSource;
+            this.vrsta.DisplayMember = "Vrsta";
+            this.vrsta.FormattingEnabled = true;
+            this.vrsta.Location = new System.Drawing.Point(127, 158);
+            this.vrsta.Name = "vrsta";
+            this.vrsta.Size = new System.Drawing.Size(176, 21);
+            this.vrsta.TabIndex = 14;
+            this.vrsta.ValueMember = "Id";
+            // 
+            // datum
+            // 
+            this.datum.Location = new System.Drawing.Point(127, 205);
+            this.datum.Name = "datum";
+            this.datum.Size = new System.Drawing.Size(176, 20);
+            this.datum.TabIndex = 15;
+            // 
+            // vinotekaDataSet1
+            // 
+            this.vinotekaDataSet1.DataSetName = "VinotekaDataSet1";
+            this.vinotekaDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // podrumBindingSource
+            // 
+            this.podrumBindingSource.DataMember = "Podrum";
+            this.podrumBindingSource.DataSource = this.vinotekaDataSet1;
+            // 
+            // podrumTableAdapter
+            // 
+            this.podrumTableAdapter.ClearBeforeFill = true;
+            // 
+            // vrstabacviBindingSource
+            // 
+            this.vrstabacviBindingSource.DataMember = "Vrsta_bacvi";
+            this.vrstabacviBindingSource.DataSource = this.vinotekaDataSet1;
+            // 
+            // vrsta_bacviTableAdapter
+            // 
+            this.vrsta_bacviTableAdapter.ClearBeforeFill = true;
+            // 
+            // bacveFrm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(340, 341);
+            this.Controls.Add(this.datum);
+            this.Controls.Add(this.vrsta);
+            this.Controls.Add(this.podrum);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.textBox5);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.textBox4);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.textBox3);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.zapremnina);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.proizvodac);
             this.Controls.Add(this.label1);
-            this.Name = "bacve";
+            this.Name = "bacveFrm";
             this.Text = "Bačve";
+            this.Load += new System.EventHandler(this.bacveFrm_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.vinotekaDataSet1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.podrumBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.vrstabacviBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -199,17 +241,22 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox proizvodac;
+        private System.Windows.Forms.TextBox zapremnina;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox5;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.ComboBox podrum;
+        private System.Windows.Forms.ComboBox vrsta;
+        private System.Windows.Forms.DateTimePicker datum;
+        private VinotekaDataSet1 vinotekaDataSet1;
+        private System.Windows.Forms.BindingSource podrumBindingSource;
+        private VinotekaDataSet1TableAdapters.PodrumTableAdapter podrumTableAdapter;
+        private System.Windows.Forms.BindingSource vrstabacviBindingSource;
+        private VinotekaDataSet1TableAdapters.Vrsta_bacviTableAdapter vrsta_bacviTableAdapter;
     }
 }

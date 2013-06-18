@@ -7,6 +7,7 @@ namespace WindowsFormsApplication1
 {
     class Bacve
     {
+        
         public string Proizvodac
         {
             get;
@@ -34,7 +35,7 @@ namespace WindowsFormsApplication1
         }
         public void UnesiBacvu()
         {
-            Baza.Instance.IzvrsiUpit("insert into Bacve values(default, '" + Proizvodac + "', " + Zapremnina + ", " + Vrsta + ", " + Podrum + ", '" + DatumKupnje + "');");
+            Baza.Instance.IzvrsiUpit("insert into Bacve (Proizvodac, Zapremnina, Vrsta, Podrum, DatumKupnje) values('" + Proizvodac + "', " + Zapremnina + ", " + Vrsta + ", " + Podrum + ", '" + DatumKupnje + "');");
         }
     }
 }

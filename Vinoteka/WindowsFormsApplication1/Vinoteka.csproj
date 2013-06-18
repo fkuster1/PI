@@ -130,6 +130,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>VinotekaDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="VinotekaDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>VinotekaDataSet1.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Vinova_loza.cs" />
     <EmbeddedResource Include="bacveFrm.resx">
       <DependentUpon>bacveFrm.cs</DependentUpon>
@@ -183,6 +188,17 @@
     </None>
     <None Include="VinotekaDataSet.xss">
       <DependentUpon>VinotekaDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="VinotekaDataSet1.xsc">
+      <DependentUpon>VinotekaDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="VinotekaDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>VinotekaDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="VinotekaDataSet1.xss">
+      <DependentUpon>VinotekaDataSet1.xsd</DependentUpon>
     </None>
     <None Include="Vinoteka_TemporaryKey.pfx" />
   </ItemGroup>
