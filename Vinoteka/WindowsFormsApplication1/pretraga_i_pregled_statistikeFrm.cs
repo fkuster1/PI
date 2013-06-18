@@ -64,5 +64,25 @@ namespace WindowsFormsApplication1
             int zavrsna = Convert.ToInt32(kraj.Text);
             this.vinoTableAdapter.PopuniVinaPoGodinama(vinotekaDataSet1.Vino, pocetna, zavrsna);
         }
+
+        private void dajVinogradePoGodinamaToolStripButton_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                this.vinogradTableAdapter.DajVinogradePoGodinama(this.vinotekaDataSet1.Vinograd, pocetakToolStripTextBox.Text, zavrsetakToolStripTextBox.Text);
+            }
+            catch (System.Exception ex)
+            {
+                System.Windows.Forms.MessageBox.Show(ex.Message);
+            }
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            string pocetna = datepoc.Value.ToShortDateString();
+            string zavrsna = datekraj.Value.ToShortDateString();
+            this.vinogradTableAdapter.DajVinogradePoGodinama(vinotekaDataSet1.Vinograd, pocetna, zavrsna);
+        }
     }
 }
