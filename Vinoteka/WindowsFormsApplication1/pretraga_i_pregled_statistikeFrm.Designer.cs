@@ -42,7 +42,6 @@
             this.vinotekaDataSet1 = new WindowsFormsApplication1.VinotekaDataSet1();
             this.button1 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
@@ -52,7 +51,6 @@
             this.dataGridViewTextBoxColumn13 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.vinogradBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
@@ -92,20 +90,12 @@
             this.vinogradTableAdapter = new WindowsFormsApplication1.VinotekaDataSet1TableAdapters.VinogradTableAdapter();
             this.vinoTableAdapter = new WindowsFormsApplication1.VinotekaDataSet1TableAdapters.VinoTableAdapter();
             this.bacveTableAdapter = new WindowsFormsApplication1.VinotekaDataSet1TableAdapters.BacveTableAdapter();
-            this.popuniVinaPoGodinamaToolStrip = new System.Windows.Forms.ToolStrip();
-            this.pocetnaToolStripLabel = new System.Windows.Forms.ToolStripLabel();
-            this.pocetnaToolStripTextBox = new System.Windows.Forms.ToolStripTextBox();
-            this.zavrsnaToolStripLabel = new System.Windows.Forms.ToolStripLabel();
-            this.zavrsnaToolStripTextBox = new System.Windows.Forms.ToolStripTextBox();
-            this.popuniVinaPoGodinamaToolStripButton = new System.Windows.Forms.ToolStripButton();
-            this.dajVinogradePoGodinamaToolStrip = new System.Windows.Forms.ToolStrip();
-            this.pocetakToolStripLabel = new System.Windows.Forms.ToolStripLabel();
-            this.pocetakToolStripTextBox = new System.Windows.Forms.ToolStripTextBox();
-            this.zavrsetakToolStripLabel = new System.Windows.Forms.ToolStripLabel();
-            this.zavrsetakToolStripTextBox = new System.Windows.Forms.ToolStripTextBox();
-            this.dajVinogradePoGodinamaToolStripButton = new System.Windows.Forms.ToolStripButton();
             this.datepoc = new System.Windows.Forms.DateTimePicker();
             this.datekraj = new System.Windows.Forms.DateTimePicker();
+            this.poslovipoc = new System.Windows.Forms.DateTimePicker();
+            this.poslovikraj = new System.Windows.Forms.DateTimePicker();
+            this.slikabacve = new System.Windows.Forms.PictureBox();
+            this.label12 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.obavljeniposloviBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.vinotekaDataSet1)).BeginInit();
@@ -121,8 +111,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.bacveBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.vinoBindingSource)).BeginInit();
-            this.popuniVinaPoGodinamaToolStrip.SuspendLayout();
-            this.dajVinogradePoGodinamaToolStrip.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.slikabacve)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridView1
@@ -208,6 +197,7 @@
             this.button1.TabIndex = 1;
             this.button1.Text = "Pretraži";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // label1
             // 
@@ -219,14 +209,6 @@
             this.label1.Size = new System.Drawing.Size(138, 15);
             this.label1.TabIndex = 2;
             this.label1.Text = "Pregled poslova po datumu";
-            // 
-            // textBox1
-            // 
-            this.textBox1.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.textBox1.Location = new System.Drawing.Point(50, 48);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(84, 20);
-            this.textBox1.TabIndex = 3;
             // 
             // label2
             // 
@@ -304,14 +286,6 @@
             this.label4.Size = new System.Drawing.Size(182, 15);
             this.label4.TabIndex = 8;
             this.label4.Text = "Pregled vinograda po datumu sadnje";
-            // 
-            // textBox2
-            // 
-            this.textBox2.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.textBox2.Location = new System.Drawing.Point(186, 48);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(84, 20);
-            this.textBox2.TabIndex = 14;
             // 
             // label5
             // 
@@ -430,6 +404,7 @@
             this.dataGridView4.Name = "dataGridView4";
             this.dataGridView4.Size = new System.Drawing.Size(437, 114);
             this.dataGridView4.TabIndex = 0;
+            this.dataGridView4.SelectionChanged += new System.EventHandler(this.dataGridView4_SelectionChanged);
             // 
             // dataGridViewTextBoxColumn19
             // 
@@ -632,94 +607,6 @@
             // 
             this.bacveTableAdapter.ClearBeforeFill = true;
             // 
-            // popuniVinaPoGodinamaToolStrip
-            // 
-            this.popuniVinaPoGodinamaToolStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.pocetnaToolStripLabel,
-            this.pocetnaToolStripTextBox,
-            this.zavrsnaToolStripLabel,
-            this.zavrsnaToolStripTextBox,
-            this.popuniVinaPoGodinamaToolStripButton});
-            this.popuniVinaPoGodinamaToolStrip.Location = new System.Drawing.Point(0, 0);
-            this.popuniVinaPoGodinamaToolStrip.Name = "popuniVinaPoGodinamaToolStrip";
-            this.popuniVinaPoGodinamaToolStrip.Size = new System.Drawing.Size(846, 25);
-            this.popuniVinaPoGodinamaToolStrip.TabIndex = 31;
-            this.popuniVinaPoGodinamaToolStrip.Text = "popuniVinaPoGodinamaToolStrip";
-            // 
-            // pocetnaToolStripLabel
-            // 
-            this.pocetnaToolStripLabel.Name = "pocetnaToolStripLabel";
-            this.pocetnaToolStripLabel.Size = new System.Drawing.Size(53, 22);
-            this.pocetnaToolStripLabel.Text = "pocetna:";
-            // 
-            // pocetnaToolStripTextBox
-            // 
-            this.pocetnaToolStripTextBox.Name = "pocetnaToolStripTextBox";
-            this.pocetnaToolStripTextBox.Size = new System.Drawing.Size(100, 25);
-            // 
-            // zavrsnaToolStripLabel
-            // 
-            this.zavrsnaToolStripLabel.Name = "zavrsnaToolStripLabel";
-            this.zavrsnaToolStripLabel.Size = new System.Drawing.Size(49, 22);
-            this.zavrsnaToolStripLabel.Text = "zavrsna:";
-            // 
-            // zavrsnaToolStripTextBox
-            // 
-            this.zavrsnaToolStripTextBox.Name = "zavrsnaToolStripTextBox";
-            this.zavrsnaToolStripTextBox.Size = new System.Drawing.Size(100, 25);
-            // 
-            // popuniVinaPoGodinamaToolStripButton
-            // 
-            this.popuniVinaPoGodinamaToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
-            this.popuniVinaPoGodinamaToolStripButton.Name = "popuniVinaPoGodinamaToolStripButton";
-            this.popuniVinaPoGodinamaToolStripButton.Size = new System.Drawing.Size(141, 22);
-            this.popuniVinaPoGodinamaToolStripButton.Text = "PopuniVinaPoGodinama";
-            this.popuniVinaPoGodinamaToolStripButton.Click += new System.EventHandler(this.popuniVinaPoGodinamaToolStripButton_Click);
-            // 
-            // dajVinogradePoGodinamaToolStrip
-            // 
-            this.dajVinogradePoGodinamaToolStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.pocetakToolStripLabel,
-            this.pocetakToolStripTextBox,
-            this.zavrsetakToolStripLabel,
-            this.zavrsetakToolStripTextBox,
-            this.dajVinogradePoGodinamaToolStripButton});
-            this.dajVinogradePoGodinamaToolStrip.Location = new System.Drawing.Point(0, 25);
-            this.dajVinogradePoGodinamaToolStrip.Name = "dajVinogradePoGodinamaToolStrip";
-            this.dajVinogradePoGodinamaToolStrip.Size = new System.Drawing.Size(846, 25);
-            this.dajVinogradePoGodinamaToolStrip.TabIndex = 32;
-            this.dajVinogradePoGodinamaToolStrip.Text = "dajVinogradePoGodinamaToolStrip";
-            // 
-            // pocetakToolStripLabel
-            // 
-            this.pocetakToolStripLabel.Name = "pocetakToolStripLabel";
-            this.pocetakToolStripLabel.Size = new System.Drawing.Size(52, 22);
-            this.pocetakToolStripLabel.Text = "pocetak:";
-            // 
-            // pocetakToolStripTextBox
-            // 
-            this.pocetakToolStripTextBox.Name = "pocetakToolStripTextBox";
-            this.pocetakToolStripTextBox.Size = new System.Drawing.Size(100, 25);
-            // 
-            // zavrsetakToolStripLabel
-            // 
-            this.zavrsetakToolStripLabel.Name = "zavrsetakToolStripLabel";
-            this.zavrsetakToolStripLabel.Size = new System.Drawing.Size(58, 22);
-            this.zavrsetakToolStripLabel.Text = "zavrsetak:";
-            // 
-            // zavrsetakToolStripTextBox
-            // 
-            this.zavrsetakToolStripTextBox.Name = "zavrsetakToolStripTextBox";
-            this.zavrsetakToolStripTextBox.Size = new System.Drawing.Size(100, 25);
-            // 
-            // dajVinogradePoGodinamaToolStripButton
-            // 
-            this.dajVinogradePoGodinamaToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
-            this.dajVinogradePoGodinamaToolStripButton.Name = "dajVinogradePoGodinamaToolStripButton";
-            this.dajVinogradePoGodinamaToolStripButton.Size = new System.Drawing.Size(151, 22);
-            this.dajVinogradePoGodinamaToolStripButton.Text = "DajVinogradePoGodinama";
-            this.dajVinogradePoGodinamaToolStripButton.Click += new System.EventHandler(this.dajVinogradePoGodinamaToolStripButton_Click);
-            // 
             // datepoc
             // 
             this.datepoc.Location = new System.Drawing.Point(50, 286);
@@ -734,6 +621,39 @@
             this.datekraj.Size = new System.Drawing.Size(99, 20);
             this.datekraj.TabIndex = 34;
             // 
+            // poslovipoc
+            // 
+            this.poslovipoc.Location = new System.Drawing.Point(50, 47);
+            this.poslovipoc.Name = "poslovipoc";
+            this.poslovipoc.Size = new System.Drawing.Size(96, 20);
+            this.poslovipoc.TabIndex = 35;
+            // 
+            // poslovikraj
+            // 
+            this.poslovikraj.Location = new System.Drawing.Point(180, 48);
+            this.poslovikraj.Name = "poslovikraj";
+            this.poslovikraj.Size = new System.Drawing.Size(105, 20);
+            this.poslovikraj.TabIndex = 36;
+            // 
+            // slikabacve
+            // 
+            this.slikabacve.BackColor = System.Drawing.SystemColors.Window;
+            this.slikabacve.Image = global::WindowsFormsApplication1.Properties.Resources.lBarrel4;
+            this.slikabacve.Location = new System.Drawing.Point(771, 280);
+            this.slikabacve.Name = "slikabacve";
+            this.slikabacve.Size = new System.Drawing.Size(53, 59);
+            this.slikabacve.TabIndex = 37;
+            this.slikabacve.TabStop = false;
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(659, 300);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(41, 13);
+            this.label12.TabIndex = 38;
+            this.label12.Text = "label12";
+            // 
             // pretraga_i_pregled_statistikeFrm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -741,10 +661,12 @@
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(846, 614);
+            this.Controls.Add(this.label12);
+            this.Controls.Add(this.slikabacve);
+            this.Controls.Add(this.poslovikraj);
+            this.Controls.Add(this.poslovipoc);
             this.Controls.Add(this.datekraj);
             this.Controls.Add(this.datepoc);
-            this.Controls.Add(this.dajVinogradePoGodinamaToolStrip);
-            this.Controls.Add(this.popuniVinaPoGodinamaToolStrip);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.dataGridView5);
@@ -759,12 +681,10 @@
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.button2);
-            this.Controls.Add(this.textBox2);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.dataGridView2);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.dataGridView1);
@@ -786,10 +706,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.bacveBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.vinoBindingSource)).EndInit();
-            this.popuniVinaPoGodinamaToolStrip.ResumeLayout(false);
-            this.popuniVinaPoGodinamaToolStrip.PerformLayout();
-            this.dajVinogradePoGodinamaToolStrip.ResumeLayout(false);
-            this.dajVinogradePoGodinamaToolStrip.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.slikabacve)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -807,7 +724,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn trajanjeDataGridViewTextBoxColumn;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.DataGridView dataGridView2;
@@ -816,7 +732,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn brojcokotaDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn vrijemesadnjeDataGridViewTextBoxColumn;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Button button2;
@@ -886,19 +801,11 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn22;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn23;
         private System.Windows.Forms.DataGridViewTextBoxColumn datumKupnjeDataGridViewTextBoxColumn;
-        private System.Windows.Forms.ToolStrip popuniVinaPoGodinamaToolStrip;
-        private System.Windows.Forms.ToolStripLabel pocetnaToolStripLabel;
-        private System.Windows.Forms.ToolStripTextBox pocetnaToolStripTextBox;
-        private System.Windows.Forms.ToolStripLabel zavrsnaToolStripLabel;
-        private System.Windows.Forms.ToolStripTextBox zavrsnaToolStripTextBox;
-        private System.Windows.Forms.ToolStripButton popuniVinaPoGodinamaToolStripButton;
-        private System.Windows.Forms.ToolStrip dajVinogradePoGodinamaToolStrip;
-        private System.Windows.Forms.ToolStripLabel pocetakToolStripLabel;
-        private System.Windows.Forms.ToolStripTextBox pocetakToolStripTextBox;
-        private System.Windows.Forms.ToolStripLabel zavrsetakToolStripLabel;
-        private System.Windows.Forms.ToolStripTextBox zavrsetakToolStripTextBox;
-        private System.Windows.Forms.ToolStripButton dajVinogradePoGodinamaToolStripButton;
         private System.Windows.Forms.DateTimePicker datepoc;
         private System.Windows.Forms.DateTimePicker datekraj;
+        private System.Windows.Forms.DateTimePicker poslovipoc;
+        private System.Windows.Forms.DateTimePicker poslovikraj;
+        private System.Windows.Forms.PictureBox slikabacve;
+        private System.Windows.Forms.Label label12;
     }
 }

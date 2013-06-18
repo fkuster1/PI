@@ -14,6 +14,7 @@ namespace WindowsFormsApplication1
         public pretraga_i_pregled_statistikeFrm()
         {
             InitializeComponent();
+            slikabacve.Image = Properties.Resources.lBarrel;
         }
 
         private void pretraga_i_pregled_statistike_Load(object sender, EventArgs e)
@@ -45,18 +46,6 @@ namespace WindowsFormsApplication1
             this.bacveTableAdapter.PopuniBacve(vinotekaDataSet1.Bacve, podrum);
         }
 
-        private void popuniVinaPoGodinamaToolStripButton_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                this.vinoTableAdapter.PopuniVinaPoGodinama(this.vinotekaDataSet1.Vino, new System.Nullable<int>(((int)(System.Convert.ChangeType(pocetnaToolStripTextBox.Text, typeof(int))))), new System.Nullable<int>(((int)(System.Convert.ChangeType(zavrsnaToolStripTextBox.Text, typeof(int))))));
-            }
-            catch (System.Exception ex)
-            {
-                System.Windows.Forms.MessageBox.Show(ex.Message);
-            }
-
-        }
 
         private void button3_Click(object sender, EventArgs e)
         {
@@ -65,18 +54,6 @@ namespace WindowsFormsApplication1
             this.vinoTableAdapter.PopuniVinaPoGodinama(vinotekaDataSet1.Vino, pocetna, zavrsna);
         }
 
-        private void dajVinogradePoGodinamaToolStripButton_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                this.vinogradTableAdapter.DajVinogradePoGodinama(this.vinotekaDataSet1.Vinograd, pocetakToolStripTextBox.Text, zavrsetakToolStripTextBox.Text);
-            }
-            catch (System.Exception ex)
-            {
-                System.Windows.Forms.MessageBox.Show(ex.Message);
-            }
-
-        }
 
         private void button2_Click(object sender, EventArgs e)
         {
@@ -84,5 +61,36 @@ namespace WindowsFormsApplication1
             string zavrsna = datekraj.Value.ToShortDateString();
             this.vinogradTableAdapter.DajVinogradePoGodinama(vinotekaDataSet1.Vinograd, pocetna, zavrsna);
         }
+
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            string pocetna = poslovipoc.Value.ToShortDateString();
+            string zavrsna = poslovikraj.Value.ToShortDateString();
+            this.obavljeni_posloviTableAdapter.DajPoslovePoDatumu(vinotekaDataSet1.Obavljeni_poslovi, pocetna, zavrsna);
+        }
+
+        private void dataGridView4_SelectionChanged(object sender, EventArgs e)
+        {
+            if (dataGridView4.CurrentRow!=null)
+            {
+                int bacva = (int)dataGridView4.CurrentRow.Cells[0].Value;
+                object pom1 = Baza.Instance.DohvatiVrijednost("select Zapremnina from Bacve where Id=" + bacva + ";");
+                object pom = Baza.Instance.DohvatiVrijednost("select sum(BrojLitara) from Vino_u_bacvi where Id_bacve=" + bacva + ";");
+                if (DBNull.Value!=pom && DBNull.Value!=pom1)
+                {
+                    int ukupno = (int)pom1;
+                    double iskoristeno = Convert.ToDouble(pom);
+                    double postotak = iskoristeno / ukupno;
+                    if (postotak <= 0.2) slikabacve.Image = Properties.Resources.lBarrel;
+                    else if (postotak <= 0.4) slikabacve.Image = Properties.Resources.lBarrel1;
+                    else if (postotak <= 0.6) slikabacve.Image = Properties.Resources.lBarrel2;
+                    else if (postotak <= 0.8) slikabacve.Image = Properties.Resources.lBarrel3;
+                    else slikabacve.Image = Properties.Resources.lBarrel4;
+                }
+                else slikabacve.Image = Properties.Resources.lBarrel;
+            }
+        }
+
     }
 }

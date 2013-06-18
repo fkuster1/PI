@@ -187,6 +187,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="UnosButeljaFrm.resx">
       <DependentUpon>UnosButeljaFrm.cs</DependentUpon>
@@ -240,6 +241,11 @@
     <None Include="Vinoteka_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\lBarrel.png" />
+    <None Include="Resources\lBarrel1.png" />
+    <None Include="Resources\lBarrel2.png" />
+    <None Include="Resources\lBarrel3.png" />
+    <None Include="Resources\lBarrel4.png" />
     <Content Include="Vinoteka.mdf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
