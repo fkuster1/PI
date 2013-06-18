@@ -55,5 +55,17 @@ namespace WindowsFormsApplication1
             var forma3 = new UnosButeljaFrm();
             forma3.Show();
         }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            var forma4 = new UnosVinaFrm();
+            forma4.Show();
+        }
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+            var forma4 = new UnosVinoveLozeFrm();
+            forma4.Show();
+        }
     }
 }

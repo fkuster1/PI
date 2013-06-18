@@ -32,14 +32,14 @@ namespace WindowsFormsApplication1
             get;
             set;
         }
-        private List<int> vinoJeOdLoze;
+        private List<int> vinoJeOdLoze=new List<int>();
         public void DodajLozu(int loza)
         {
             vinoJeOdLoze.Add(loza);
         }
         public void UnesiVino()
         {
-            Baza.Instance.IzvrsiUpit("insert into Vino values(default, " + GodinaProizvodnje + ", " + Kolicina + ", " + VrstaVina + ", " + Kiselina + ", " + Alkohol + ");");
+            Baza.Instance.IzvrsiUpit("insert into Vino (Godina_proizvodnje, BrojLitara, Vrsta, Kiselina, Alkohol) values(" + GodinaProizvodnje + ", " + Kolicina + ", " + VrstaVina + ", " + Kiselina + ", " + Alkohol + ");");
             int idVina = (int)Baza.Instance.DohvatiVrijednost("select top 1 Id from Vino order by Id desc;");
             foreach (int vino in vinoJeOdLoze)
             {

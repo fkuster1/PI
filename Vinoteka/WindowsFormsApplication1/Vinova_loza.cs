@@ -24,7 +24,7 @@ namespace WindowsFormsApplication1
         }
         public void UnesiLozu()
         {
-            Baza.Instance.IzvrsiUpit("insert into Vinova_loza values(default, " + Sorta + ", " + Broj_cokota + ", " + Vinograd + ");");
+            Baza.Instance.IzvrsiUpit("insert into Vinova_loza (Sorta, BrojCokota, Vinograd) values(" + Sorta + ", " + Broj_cokota + ", " + Vinograd + ");");
         }
     }
 }
