@@ -1,0 +1,236 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A086F4C0-53FC-4360-9D65-B7626080FD23}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WindowsFormsApplication1</RootNamespace>
+    <AssemblyName>WindowsFormsApplication1</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>C:\Users\Krešimir\Desktop\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>6</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>CC1EF37577830C0C6F70FAEC4F0E75CCC025F4E2</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>Vinoteka_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Bacve.cs" />
+    <Compile Include="bacveFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="bacveFrm.Designer.cs">
+      <DependentUpon>bacveFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="bacve_i_podrumiFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="bacve_i_podrumiFrm.Designer.cs">
+      <DependentUpon>bacve_i_podrumiFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Baza.cs" />
+    <Compile Include="Butelje.cs" />
+    <Compile Include="ObavljeniPoslovi.cs" />
+    <Compile Include="PocetnaFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PocetnaFrm.Designer.cs">
+      <DependentUpon>PocetnaFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Podrum.cs" />
+    <Compile Include="PodrumiFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PodrumiFrm.Designer.cs">
+      <DependentUpon>PodrumiFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PosloviFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PosloviFrm.Designer.cs">
+      <DependentUpon>PosloviFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="pretraga_i_pregled_statistikeFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="pretraga_i_pregled_statistikeFrm.Designer.cs">
+      <DependentUpon>pretraga_i_pregled_statistikeFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Vino.cs" />
+    <Compile Include="Vinograd.cs" />
+    <Compile Include="vinogradFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="vinogradFrm.Designer.cs">
+      <DependentUpon>vinogradFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VinotekaDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>VinotekaDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Vinova_loza.cs" />
+    <EmbeddedResource Include="bacveFrm.resx">
+      <DependentUpon>bacveFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="bacve_i_podrumiFrm.resx">
+      <DependentUpon>bacve_i_podrumiFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PocetnaFrm.resx">
+      <DependentUpon>PocetnaFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PodrumiFrm.resx">
+      <DependentUpon>PodrumiFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PosloviFrm.resx">
+      <DependentUpon>PosloviFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pretraga_i_pregled_statistikeFrm.resx">
+      <DependentUpon>pretraga_i_pregled_statistikeFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="vinogradFrm.resx">
+      <DependentUpon>vinogradFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="VinotekaDataSet.xsc">
+      <DependentUpon>VinotekaDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="VinotekaDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>VinotekaDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="VinotekaDataSet.xss">
+      <DependentUpon>VinotekaDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Vinoteka_TemporaryKey.pfx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Vinoteka.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Vinoteka_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>Vinoteka.mdf</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0,Profile=Client">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 Client Profile %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Sql.Server.Express.10.0">
+      <Visible>False</Visible>
+      <ProductName>SQL Server 2008 Express</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.4.5">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 4.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
