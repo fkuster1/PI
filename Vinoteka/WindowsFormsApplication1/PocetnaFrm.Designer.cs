@@ -37,6 +37,7 @@
             this.button6 = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.button7 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -123,6 +124,17 @@
             this.label1.TabIndex = 7;
             this.label1.Text = "FOI - 2013 Team Dignitas  ® All rights reserved";
             // 
+            // button7
+            // 
+            this.button7.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.button7.Location = new System.Drawing.Point(543, 255);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(146, 53);
+            this.button7.TabIndex = 8;
+            this.button7.Text = "Butelje";
+            this.button7.UseVisualStyleBackColor = false;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
+            // 
             // PocetnaFrm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -130,6 +142,7 @@
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(828, 603);
+            this.Controls.Add(this.button7);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.button6);
@@ -158,6 +171,7 @@
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button button7;
 
     }
 }

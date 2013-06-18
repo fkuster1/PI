@@ -24,7 +24,7 @@ namespace WindowsFormsApplication1
         }
         public void UnesiPodrum()
         {
-            Baza.Instance.IzvrsiUpit("insert into Butelje values(default, " + SadrziVino + ", " + BrojButelji + ", " + Zapremnina + ");");
+            Baza.Instance.IzvrsiUpit("insert into Butelje (Vino_iz_bacve, BrojButelja, Zapremnina_butelje) values(" + SadrziVino + ", " + BrojButelji + ", " + Zapremnina + ");");
         }
     }
 }

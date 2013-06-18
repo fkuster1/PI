@@ -49,5 +49,11 @@ namespace WindowsFormsApplication1
         {
             Baza.Instance.Connection.Close();
         }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            var forma3 = new UnosButeljaFrm();
+            forma3.Show();
+        }
     }
 }
