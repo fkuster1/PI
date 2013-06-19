@@ -41,6 +41,7 @@
             this.button8 = new System.Windows.Forms.Button();
             this.button9 = new System.Windows.Forms.Button();
             this.button10 = new System.Windows.Forms.Button();
+            this.button11 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -130,7 +131,7 @@
             // button7
             // 
             this.button7.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.button7.Location = new System.Drawing.Point(543, 255);
+            this.button7.Location = new System.Drawing.Point(543, 276);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(146, 53);
             this.button7.TabIndex = 8;
@@ -141,7 +142,7 @@
             // button8
             // 
             this.button8.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.button8.Location = new System.Drawing.Point(543, 333);
+            this.button8.Location = new System.Drawing.Point(543, 345);
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(146, 53);
             this.button8.TabIndex = 9;
@@ -171,6 +172,17 @@
             this.button10.UseVisualStyleBackColor = false;
             this.button10.Click += new System.EventHandler(this.button10_Click);
             // 
+            // button11
+            // 
+            this.button11.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.button11.Location = new System.Drawing.Point(543, 203);
+            this.button11.Name = "button11";
+            this.button11.Size = new System.Drawing.Size(146, 53);
+            this.button11.TabIndex = 12;
+            this.button11.Text = "Ostali unosi";
+            this.button11.UseVisualStyleBackColor = false;
+            this.button11.Click += new System.EventHandler(this.button11_Click);
+            // 
             // PocetnaFrm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -178,6 +190,7 @@
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(828, 603);
+            this.Controls.Add(this.button11);
             this.Controls.Add(this.button10);
             this.Controls.Add(this.button9);
             this.Controls.Add(this.button8);
@@ -214,6 +227,7 @@
         private System.Windows.Forms.Button button8;
         private System.Windows.Forms.Button button9;
         private System.Windows.Forms.Button button10;
+        private System.Windows.Forms.Button button11;
 
     }
 }

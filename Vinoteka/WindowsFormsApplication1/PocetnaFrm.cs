@@ -120,5 +120,16 @@ namespace WindowsFormsApplication1
         {
             loadanje.Close();
         }
+
+        private void button11_Click(object sender, EventArgs e)
+        {
+            var forma4 = new Sorte_Poslovi();
+            Thread loading = new Thread(new ThreadStart(dretvaLoading));
+            loading.Start();
+            forma4.Show();
+            Thread loading2 = new Thread(new ThreadStart(dretvaLoading2));
+            loading2.Start();
+            
+        }
     }
 }
