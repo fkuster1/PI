@@ -62,7 +62,6 @@ namespace WindowsFormsApplication1
 
         public int IzvrsiUpit(string sqlUpit)
         {
-
             SqlCommand command = new SqlCommand(sqlUpit, Connection);
             return command.ExecuteNonQuery();
         }

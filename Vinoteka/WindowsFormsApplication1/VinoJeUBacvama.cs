@@ -26,5 +26,11 @@ namespace WindowsFormsApplication1
         {
             Baza.Instance.IzvrsiUpit("insert into Vino_u_bacvi (Id_bacve, Id_vina, BrojLitara) values(" + Bacva + ", " + Vino + ", " + BrojLitara + ");");
         }
+        public void AzurirajVinoUBacvi()
+        {
+            decimal stariBrLitara = Convert.ToDecimal(Baza.Instance.DohvatiVrijednost("select BrojLitara from Vino_u_bacvi where Id_bacve=" + Bacva + " and Id_vina=" + Vino + ";"));
+            float noviBrLitara=(float)stariBrLitara+BrojLitara;      
+            Baza.Instance.IzvrsiUpit("update Vino_u_bacvi set BrojLitara=" + noviBrLitara + " where Id_bacve="+Bacva+" and Id_vina="+Vino+";");
+        }
     }
 }

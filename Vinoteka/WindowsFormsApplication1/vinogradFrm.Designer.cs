@@ -38,7 +38,6 @@
             this.button2 = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
             this.datumSadnje = new System.Windows.Forms.DateTimePicker();
-            this.label4 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -129,22 +128,12 @@
             this.datumSadnje.Size = new System.Drawing.Size(195, 20);
             this.datumSadnje.TabIndex = 14;
             // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(26, 182);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(35, 13);
-            this.label4.TabIndex = 15;
-            this.label4.Text = "label4";
-            // 
             // vinogradFrm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(663, 371);
-            this.Controls.Add(this.label4);
             this.Controls.Add(this.datumSadnje);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.button2);
@@ -177,7 +166,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn vrijemesadnjeDataGridViewTextBoxColumn;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.DateTimePicker datumSadnje;
-        private System.Windows.Forms.Label label4;
 
 
     }

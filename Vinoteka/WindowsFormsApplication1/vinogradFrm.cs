@@ -16,8 +16,6 @@ namespace WindowsFormsApplication1
         {
             InitializeComponent();
             vinograd = new Vinograd(); 
-            string vin = (string)Baza.Instance.DohvatiVrijednost("select top 1 Adresa from Vinograd order by Id desc;");
-            label4.Text = vin;
         }
 
         private void vinograd_Load(object sender, EventArgs e)
@@ -37,8 +35,6 @@ namespace WindowsFormsApplication1
             vinograd.DatumSadnje = datumSadnje.Value.ToShortDateString();
             vinograd.BrojCokota = Convert.ToInt32(broj_cokota.Text);
             vinograd.UnesiVinograd();
-            string vin = (string)Baza.Instance.DohvatiVrijednost("select top 1 Adresa from Vinograd order by Id desc;");
-            label4.Text = vin;
         }
     }
 }

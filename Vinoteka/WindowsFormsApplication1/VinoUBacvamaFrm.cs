@@ -32,7 +32,53 @@ namespace WindowsFormsApplication1
             vinob.Bacva = Convert.ToInt32(bacva.Text);
             vinob.Vino = Convert.ToInt32(vino.Text);
             vinob.BrojLitara = float.Parse(brlitara.Text);
-            vinob.UnesiVinoUBacvu();
+            object pom1 = Baza.Instance.DohvatiVrijednost("select Zapremnina from Bacve where Id=" + vinob.Bacva + ";");
+            object pom = Baza.Instance.DohvatiVrijednost("select sum(BrojLitara) from Vino_u_bacvi where Id_bacve=" + vinob.Bacva + ";");
+            if (DBNull.Value != pom1)
+            {
+                int ukupno = (int)pom1;
+                double iskoristeno;
+                if (DBNull.Value != pom)
+                {
+                    iskoristeno = Convert.ToDouble(pom);
+                }
+                else iskoristeno = 0;
+                double preostalo = ukupno - iskoristeno;
+                if (vinob.BrojLitara <= preostalo)
+                {
+                    object imavec = Baza.Instance.DohvatiVrijednost("select BrojLitara from Vino_u_bacvi where Id_bacve=" + vinob.Bacva + " and Id_vina=" + vinob.Vino + ";");
+                    if (imavec==null)
+                    {
+                        vinob.UnesiVinoUBacvu();
+                    }
+                    else
+                    {
+                        vinob.AzurirajVinoUBacvi();
+                    }
+                    preostalo -= vinob.BrojLitara;
+                    preostalotxt.Text = "Preostalo: " + preostalo.ToString();
+                }
+                else MessageBox.Show("Ne može stati toliku vina u tu bačvu!");
+            }
+        }
+
+        private void bacva_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            int idbacva = Convert.ToInt32(bacva.Text);
+            object pom1 = Baza.Instance.DohvatiVrijednost("select Zapremnina from Bacve where Id=" + idbacva + ";");
+            object pom = Baza.Instance.DohvatiVrijednost("select sum(BrojLitara) from Vino_u_bacvi where Id_bacve=" + idbacva + ";");
+            if (DBNull.Value != pom1)
+            {
+                int ukupno = (int)pom1;
+                double iskoristeno;
+                if (DBNull.Value != pom)
+                {
+                    iskoristeno = Convert.ToDouble(pom);
+                }
+                else iskoristeno = 0;
+                double preostalo = ukupno - iskoristeno;
+                preostalotxt.Text = "Preostalo: " + preostalo.ToString();
+            }
         }
     }
 }
