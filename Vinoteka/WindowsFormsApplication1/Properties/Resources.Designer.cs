@@ -60,37 +60,44 @@ namespace WindowsFormsApplication1.Properties {
             }
         }
         
-        internal static System.Drawing.Bitmap lBarrel {
+        internal static System.Drawing.Bitmap Barrel {
             get {
-                object obj = ResourceManager.GetObject("lBarrel", resourceCulture);
+                object obj = ResourceManager.GetObject("Barrel", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
         
-        internal static System.Drawing.Bitmap lBarrel1 {
+        internal static System.Drawing.Bitmap Barrel1 {
             get {
-                object obj = ResourceManager.GetObject("lBarrel1", resourceCulture);
+                object obj = ResourceManager.GetObject("Barrel1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
         
-        internal static System.Drawing.Bitmap lBarrel2 {
+        internal static System.Drawing.Bitmap Barrel2 {
             get {
-                object obj = ResourceManager.GetObject("lBarrel2", resourceCulture);
+                object obj = ResourceManager.GetObject("Barrel2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
         
-        internal static System.Drawing.Bitmap lBarrel3 {
+        internal static System.Drawing.Bitmap Barrel3 {
             get {
-                object obj = ResourceManager.GetObject("lBarrel3", resourceCulture);
+                object obj = ResourceManager.GetObject("Barrel3", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
         
-        internal static System.Drawing.Bitmap lBarrel4 {
+        internal static System.Drawing.Bitmap Barrel4 {
             get {
-                object obj = ResourceManager.GetObject("lBarrel4", resourceCulture);
+                object obj = ResourceManager.GetObject("Barrel4", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap beczka_gif_180x180_01 {
+            get {
+                object obj = ResourceManager.GetObject("beczka_gif_180x180_01", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

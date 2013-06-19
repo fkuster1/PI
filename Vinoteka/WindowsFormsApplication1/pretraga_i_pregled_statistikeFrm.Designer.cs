@@ -95,7 +95,6 @@
             this.poslovipoc = new System.Windows.Forms.DateTimePicker();
             this.poslovikraj = new System.Windows.Forms.DateTimePicker();
             this.slikabacve = new System.Windows.Forms.PictureBox();
-            this.label12 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.obavljeniposloviBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.vinotekaDataSet1)).BeginInit();
@@ -638,21 +637,13 @@
             // slikabacve
             // 
             this.slikabacve.BackColor = System.Drawing.SystemColors.Window;
-            this.slikabacve.Image = global::WindowsFormsApplication1.Properties.Resources.lBarrel4;
+            this.slikabacve.Image = global::WindowsFormsApplication1.Properties.Resources.Barrel4;
             this.slikabacve.Location = new System.Drawing.Point(771, 280);
             this.slikabacve.Name = "slikabacve";
             this.slikabacve.Size = new System.Drawing.Size(53, 59);
+            this.slikabacve.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.slikabacve.TabIndex = 37;
             this.slikabacve.TabStop = false;
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(659, 300);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(41, 13);
-            this.label12.TabIndex = 38;
-            this.label12.Text = "label12";
             // 
             // pretraga_i_pregled_statistikeFrm
             // 
@@ -661,7 +652,6 @@
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(846, 614);
-            this.Controls.Add(this.label12);
             this.Controls.Add(this.slikabacve);
             this.Controls.Add(this.poslovikraj);
             this.Controls.Add(this.poslovipoc);
@@ -806,6 +796,5 @@
         private System.Windows.Forms.DateTimePicker poslovipoc;
         private System.Windows.Forms.DateTimePicker poslovikraj;
         private System.Windows.Forms.PictureBox slikabacve;
-        private System.Windows.Forms.Label label12;
     }
 }

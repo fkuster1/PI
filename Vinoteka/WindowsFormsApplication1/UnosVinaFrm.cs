@@ -17,7 +17,7 @@ namespace WindowsFormsApplication1
         {
             InitializeComponent();
             vino = new Vino();
-            SqlDataReader reader = Baza.Instance.DohvatiDataReader("select Id from Vinova_loza;");
+            SqlDataReader reader = Baza.Instance.DohvatiDataReader("select Vinova_loza.Id,Sorta.Naziv, Vinograd.Adresa from Vinova_loza, Sorta, Vinograd where Sorta.Id=Vinova_loza.Sorta and Vinova_loza.Vinograd=Vinograd.Id;");
             while (reader.Read())
             {
                 loze.Items.Add(reader[0]);

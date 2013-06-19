@@ -14,7 +14,7 @@ namespace WindowsFormsApplication1
         public pretraga_i_pregled_statistikeFrm()
         {
             InitializeComponent();
-            slikabacve.Image = Properties.Resources.lBarrel;
+            slikabacve.Image = Properties.Resources.Barrel;
         }
 
         private void pretraga_i_pregled_statistike_Load(object sender, EventArgs e)
@@ -82,13 +82,13 @@ namespace WindowsFormsApplication1
                     int ukupno = (int)pom1;
                     double iskoristeno = Convert.ToDouble(pom);
                     double postotak = iskoristeno / ukupno;
-                    if (postotak <= 0.2) slikabacve.Image = Properties.Resources.lBarrel;
-                    else if (postotak <= 0.4) slikabacve.Image = Properties.Resources.lBarrel1;
-                    else if (postotak <= 0.6) slikabacve.Image = Properties.Resources.lBarrel2;
-                    else if (postotak <= 0.8) slikabacve.Image = Properties.Resources.lBarrel3;
-                    else slikabacve.Image = Properties.Resources.lBarrel4;
+                    if (postotak <= 0.2) slikabacve.Image = Properties.Resources.Barrel;
+                    else if (postotak <= 0.4) slikabacve.Image = Properties.Resources.Barrel1;
+                    else if (postotak <= 0.6) slikabacve.Image = Properties.Resources.Barrel2;
+                    else if (postotak <= 0.8) slikabacve.Image = Properties.Resources.Barrel3;
+                    else slikabacve.Image = Properties.Resources.Barrel4;
                 }
-                else slikabacve.Image = Properties.Resources.lBarrel;
+                else slikabacve.Image = Properties.Resources.Barrel;
             }
         }
 

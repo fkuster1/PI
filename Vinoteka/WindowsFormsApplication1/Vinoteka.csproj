@@ -89,6 +89,12 @@
     </Compile>
     <Compile Include="Baza.cs" />
     <Compile Include="Butelje.cs" />
+    <Compile Include="LoadFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoadFrm.Designer.cs">
+      <DependentUpon>LoadFrm.cs</DependentUpon>
+    </Compile>
     <Compile Include="ObavljeniPoslovi.cs" />
     <Compile Include="PocetnaFrm.cs">
       <SubType>Form</SubType>
@@ -167,6 +173,9 @@
     <EmbeddedResource Include="bacve_i_podrumiFrm.resx">
       <DependentUpon>bacve_i_podrumiFrm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="LoadFrm.resx">
+      <DependentUpon>LoadFrm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="PocetnaFrm.resx">
       <DependentUpon>PocetnaFrm.cs</DependentUpon>
     </EmbeddedResource>
@@ -241,11 +250,12 @@
     <None Include="Vinoteka_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\lBarrel.png" />
-    <None Include="Resources\lBarrel1.png" />
-    <None Include="Resources\lBarrel2.png" />
-    <None Include="Resources\lBarrel3.png" />
-    <None Include="Resources\lBarrel4.png" />
+    <None Include="Resources\beczka_gif_180x180_01.gif" />
+    <None Include="Resources\Barrel.png" />
+    <None Include="Resources\Barrel1.png" />
+    <None Include="Resources\Barrel2.png" />
+    <None Include="Resources\Barrel3.png" />
+    <None Include="Resources\Barrel4.png" />
     <Content Include="Vinoteka.mdf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
