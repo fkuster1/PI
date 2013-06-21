@@ -78,20 +78,29 @@ namespace WindowsFormsApplication1
                 int bacva = (int)dataGridView4.CurrentRow.Cells[0].Value;
                 object pom1 = Baza.Instance.DohvatiVrijednost("select Zapremnina from Bacve where Id=" + bacva + ";");
                 object pom = Baza.Instance.DohvatiVrijednost("select sum(BrojLitara) from Vino_u_bacvi where Id_bacve=" + bacva + ";");
-                if (DBNull.Value!=pom && DBNull.Value!=pom1)
+                if (DBNull.Value != pom && DBNull.Value != pom1)
                 {
                     int ukupno = (int)pom1;
                     double iskoristeno = Convert.ToDouble(pom);
                     double postotak = iskoristeno / ukupno;
+                    postotak = Math.Round(postotak, 2);
                     if (postotak <= 0.2) slikabacve.Image = Properties.Resources.Barrel;
                     else if (postotak <= 0.4) slikabacve.Image = Properties.Resources.Barrel1;
                     else if (postotak <= 0.6) slikabacve.Image = Properties.Resources.Barrel2;
                     else if (postotak <= 0.8) slikabacve.Image = Properties.Resources.Barrel3;
                     else slikabacve.Image = Properties.Resources.Barrel4;
+                    string tip = "Popunjenost bačve: " + (postotak*100).ToString() + "%";
+                    toolTip1.SetToolTip(this.slikabacve, tip);
                 }
-                else slikabacve.Image = Properties.Resources.Barrel;
+                else
+                {
+                    slikabacve.Image = Properties.Resources.Barrel;
+                    string tip = "Popunjenost bačve: 0%";
+                    toolTip1.SetToolTip(this.slikabacve, tip);
+                }
             }
         }
+
 
     }
 }

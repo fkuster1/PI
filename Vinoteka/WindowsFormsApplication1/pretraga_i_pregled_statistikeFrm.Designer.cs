@@ -95,6 +95,7 @@
             this.poslovipoc = new System.Windows.Forms.DateTimePicker();
             this.poslovikraj = new System.Windows.Forms.DateTimePicker();
             this.slikabacve = new System.Windows.Forms.PictureBox();
+            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.obavljeniposloviBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.vinotekaDataSet1)).BeginInit();
@@ -796,5 +797,6 @@
         private System.Windows.Forms.DateTimePicker poslovipoc;
         private System.Windows.Forms.DateTimePicker poslovikraj;
         private System.Windows.Forms.PictureBox slikabacve;
+        private System.Windows.Forms.ToolTip toolTip1;
     }
 }
