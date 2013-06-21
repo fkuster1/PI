@@ -14,6 +14,7 @@ namespace WindowsFormsApplication1
         public Sorte_Poslovi()
         {
             InitializeComponent();
+            this.CenterToScreen();
         }
 
         private void button3_Click(object sender, EventArgs e)

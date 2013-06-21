@@ -24,7 +24,7 @@
     <UpdatePeriodically>false</UpdatePeriodically>
     <UpdateRequired>false</UpdateRequired>
     <MapFileExtensions>true</MapFileExtensions>
-    <ApplicationRevision>11</ApplicationRevision>
+    <ApplicationRevision>13</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <PublishWizardCompleted>true</PublishWizardCompleted>
@@ -265,6 +265,15 @@
     <None Include="Resources\Barrel2.png" />
     <None Include="Resources\Barrel3.png" />
     <None Include="Resources\Barrel4.png" />
+    <None Include="Resources\pocetna.png" />
+    <None Include="Resources\pocetna1.png" />
+    <None Include="Resources\vinograd.png" />
+    <None Include="Resources\podrum.png" />
+    <None Include="Resources\bacva.png" />
+    <None Include="Resources\posao.png" />
+    <None Include="Resources\loza.png" />
+    <None Include="Resources\vin.png" />
+    <None Include="Resources\butelja.png" />
     <Content Include="Vinoteka.mdf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

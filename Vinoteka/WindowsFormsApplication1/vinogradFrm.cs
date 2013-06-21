@@ -15,6 +15,7 @@ namespace WindowsFormsApplication1
         public vinogradFrm()
         {
             InitializeComponent();
+            this.CenterToScreen();
             vinograd = new Vinograd(); 
         }
 

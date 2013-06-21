@@ -41,16 +41,18 @@
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.podrum = new System.Windows.Forms.ComboBox();
-            this.vrsta = new System.Windows.Forms.ComboBox();
-            this.datum = new System.Windows.Forms.DateTimePicker();
-            this.vinotekaDataSet1 = new WindowsFormsApplication1.VinotekaDataSet1();
             this.podrumBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.podrumTableAdapter = new WindowsFormsApplication1.VinotekaDataSet1TableAdapters.PodrumTableAdapter();
+            this.vinotekaDataSet1 = new WindowsFormsApplication1.VinotekaDataSet1();
+            this.vrsta = new System.Windows.Forms.ComboBox();
             this.vrstabacviBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.datum = new System.Windows.Forms.DateTimePicker();
+            this.podrumTableAdapter = new WindowsFormsApplication1.VinotekaDataSet1TableAdapters.PodrumTableAdapter();
             this.vrsta_bacviTableAdapter = new WindowsFormsApplication1.VinotekaDataSet1TableAdapters.Vrsta_bacviTableAdapter();
-            ((System.ComponentModel.ISupportInitialize)(this.vinotekaDataSet1)).BeginInit();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.podrumBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.vinotekaDataSet1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.vrstabacviBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -167,6 +169,16 @@
             this.podrum.TabIndex = 13;
             this.podrum.ValueMember = "Id";
             // 
+            // podrumBindingSource
+            // 
+            this.podrumBindingSource.DataMember = "Podrum";
+            this.podrumBindingSource.DataSource = this.vinotekaDataSet1;
+            // 
+            // vinotekaDataSet1
+            // 
+            this.vinotekaDataSet1.DataSetName = "VinotekaDataSet1";
+            this.vinotekaDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
             // vrsta
             // 
             this.vrsta.DataSource = this.vrstabacviBindingSource;
@@ -178,6 +190,11 @@
             this.vrsta.TabIndex = 14;
             this.vrsta.ValueMember = "Id";
             // 
+            // vrstabacviBindingSource
+            // 
+            this.vrstabacviBindingSource.DataMember = "Vrsta_bacvi";
+            this.vrstabacviBindingSource.DataSource = this.vinotekaDataSet1;
+            // 
             // datum
             // 
             this.datum.Location = new System.Drawing.Point(127, 205);
@@ -185,35 +202,31 @@
             this.datum.Size = new System.Drawing.Size(176, 20);
             this.datum.TabIndex = 15;
             // 
-            // vinotekaDataSet1
-            // 
-            this.vinotekaDataSet1.DataSetName = "VinotekaDataSet1";
-            this.vinotekaDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // podrumBindingSource
-            // 
-            this.podrumBindingSource.DataMember = "Podrum";
-            this.podrumBindingSource.DataSource = this.vinotekaDataSet1;
-            // 
             // podrumTableAdapter
             // 
             this.podrumTableAdapter.ClearBeforeFill = true;
             // 
-            // vrstabacviBindingSource
-            // 
-            this.vrstabacviBindingSource.DataMember = "Vrsta_bacvi";
-            this.vrstabacviBindingSource.DataSource = this.vinotekaDataSet1;
-            // 
             // vrsta_bacviTableAdapter
             // 
             this.vrsta_bacviTableAdapter.ClearBeforeFill = true;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::WindowsFormsApplication1.Properties.Resources.bacva;
+            this.pictureBox1.Location = new System.Drawing.Point(328, 54);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(205, 259);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 16;
+            this.pictureBox1.TabStop = false;
             // 
             // bacveFrm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(340, 341);
+            this.ClientSize = new System.Drawing.Size(545, 331);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.datum);
             this.Controls.Add(this.vrsta);
             this.Controls.Add(this.podrum);
@@ -230,9 +243,10 @@
             this.Name = "bacveFrm";
             this.Text = "Bačve";
             this.Load += new System.EventHandler(this.bacveFrm_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.vinotekaDataSet1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.podrumBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.vinotekaDataSet1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.vrstabacviBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -258,5 +272,6 @@
         private VinotekaDataSet1TableAdapters.PodrumTableAdapter podrumTableAdapter;
         private System.Windows.Forms.BindingSource vrstabacviBindingSource;
         private VinotekaDataSet1TableAdapters.Vrsta_bacviTableAdapter vrsta_bacviTableAdapter;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

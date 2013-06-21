@@ -15,6 +15,7 @@ namespace WindowsFormsApplication1
         public UnosButeljaFrm()
         {
             InitializeComponent();
+            this.CenterToScreen();
             butelje = new Butelje();
         }
 

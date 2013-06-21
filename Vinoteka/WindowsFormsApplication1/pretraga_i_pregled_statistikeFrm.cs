@@ -14,6 +14,7 @@ namespace WindowsFormsApplication1
         public pretraga_i_pregled_statistikeFrm()
         {
             InitializeComponent();
+            this.CenterToScreen();
             slikabacve.Image = Properties.Resources.Barrel;
         }
 

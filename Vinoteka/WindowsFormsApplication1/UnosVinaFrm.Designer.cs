@@ -48,10 +48,12 @@
             this.vinova_lozaTableAdapter = new WindowsFormsApplication1.VinotekaDataSet1TableAdapters.Vinova_lozaTableAdapter();
             this.vinovalozaBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.loze = new System.Windows.Forms.CheckedListBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.vrstavinaBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.vinotekaDataSet1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.vinovalozaBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.vinovalozaBindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -193,11 +195,22 @@
             this.loze.Size = new System.Drawing.Size(260, 79);
             this.loze.TabIndex = 14;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::WindowsFormsApplication1.Properties.Resources.vin;
+            this.pictureBox1.Location = new System.Drawing.Point(281, 41);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(133, 173);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 15;
+            this.pictureBox1.TabStop = false;
+            // 
             // UnosVinaFrm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(412, 360);
+            this.ClientSize = new System.Drawing.Size(433, 366);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.loze);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.button1);
@@ -218,6 +231,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.vinotekaDataSet1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.vinovalozaBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.vinovalozaBindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -244,5 +258,6 @@
         private VinotekaDataSet1TableAdapters.Vinova_lozaTableAdapter vinova_lozaTableAdapter;
         private System.Windows.Forms.BindingSource vinovalozaBindingSource1;
         private System.Windows.Forms.CheckedListBox loze;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

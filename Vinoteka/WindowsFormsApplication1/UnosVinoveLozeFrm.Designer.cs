@@ -33,17 +33,19 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.sorte = new System.Windows.Forms.ComboBox();
-            this.vinotekaDataSet1 = new WindowsFormsApplication1.VinotekaDataSet1();
             this.sortaBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.vinotekaDataSet1 = new WindowsFormsApplication1.VinotekaDataSet1();
             this.sortaTableAdapter = new WindowsFormsApplication1.VinotekaDataSet1TableAdapters.SortaTableAdapter();
             this.vinograd = new System.Windows.Forms.ComboBox();
             this.vinogradBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.vinogradTableAdapter = new WindowsFormsApplication1.VinotekaDataSet1TableAdapters.VinogradTableAdapter();
             this.brojcokota = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.vinotekaDataSet1)).BeginInit();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.sortaBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.vinotekaDataSet1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.vinogradBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -84,15 +86,15 @@
             this.sorte.TabIndex = 3;
             this.sorte.ValueMember = "Id";
             // 
-            // vinotekaDataSet1
-            // 
-            this.vinotekaDataSet1.DataSetName = "VinotekaDataSet1";
-            this.vinotekaDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
             // sortaBindingSource
             // 
             this.sortaBindingSource.DataMember = "Sorta";
             this.sortaBindingSource.DataSource = this.vinotekaDataSet1;
+            // 
+            // vinotekaDataSet1
+            // 
+            this.vinotekaDataSet1.DataSetName = "VinotekaDataSet1";
+            this.vinotekaDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // sortaTableAdapter
             // 
@@ -127,7 +129,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(151, 155);
+            this.button1.Location = new System.Drawing.Point(47, 148);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 6;
@@ -135,11 +137,22 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::WindowsFormsApplication1.Properties.Resources.loza;
+            this.pictureBox1.Location = new System.Drawing.Point(177, 127);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(240, 161);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 7;
+            this.pictureBox1.TabStop = false;
+            // 
             // UnosVinoveLozeFrm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(310, 277);
+            this.ClientSize = new System.Drawing.Size(429, 300);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.brojcokota);
             this.Controls.Add(this.vinograd);
@@ -150,9 +163,10 @@
             this.Name = "UnosVinoveLozeFrm";
             this.Text = "UnosVinoveLozeFrm";
             this.Load += new System.EventHandler(this.UnosVinoveLozeFrm_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.vinotekaDataSet1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.sortaBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.vinotekaDataSet1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.vinogradBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -172,5 +186,6 @@
         private VinotekaDataSet1TableAdapters.VinogradTableAdapter vinogradTableAdapter;
         private System.Windows.Forms.TextBox brojcokota;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

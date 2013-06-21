@@ -15,6 +15,7 @@ namespace WindowsFormsApplication1
         public PodrumiFrm()
         {
             InitializeComponent();
+            this.CenterToScreen();
             podrum = new Podrum(); 
         }
 

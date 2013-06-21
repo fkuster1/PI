@@ -60,6 +60,13 @@ namespace WindowsFormsApplication1.Properties {
             }
         }
         
+        internal static System.Drawing.Bitmap bacva {
+            get {
+                object obj = ResourceManager.GetObject("bacva", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
         internal static System.Drawing.Bitmap Barrel {
             get {
                 object obj = ResourceManager.GetObject("Barrel", resourceCulture);
@@ -98,6 +105,62 @@ namespace WindowsFormsApplication1.Properties {
         internal static System.Drawing.Bitmap beczka_gif_180x180_01 {
             get {
                 object obj = ResourceManager.GetObject("beczka_gif_180x180_01", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap butelja {
+            get {
+                object obj = ResourceManager.GetObject("butelja", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap loza {
+            get {
+                object obj = ResourceManager.GetObject("loza", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap pocetna {
+            get {
+                object obj = ResourceManager.GetObject("pocetna", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap pocetna1 {
+            get {
+                object obj = ResourceManager.GetObject("pocetna1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap podrum {
+            get {
+                object obj = ResourceManager.GetObject("podrum", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap posao {
+            get {
+                object obj = ResourceManager.GetObject("posao", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap vin {
+            get {
+                object obj = ResourceManager.GetObject("vin", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap vinograd {
+            get {
+                object obj = ResourceManager.GetObject("vinograd", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

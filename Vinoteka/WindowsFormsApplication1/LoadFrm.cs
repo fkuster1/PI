@@ -14,6 +14,8 @@ namespace WindowsFormsApplication1
         public LoadFrm()
         {
             InitializeComponent();
+            this.BackColor = Color.White;
+            this.CenterToScreen();
         }
     }
 }

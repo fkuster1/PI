@@ -14,8 +14,9 @@ namespace WindowsFormsApplication1
         Bacve bacve;
         public bacveFrm()
         {
-            
+
             InitializeComponent();
+            this.CenterToScreen();
             bacve = new Bacve();
         }
 

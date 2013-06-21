@@ -38,6 +38,8 @@
             this.button2 = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
             this.datumSadnje = new System.Windows.Forms.DateTimePicker();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -128,12 +130,23 @@
             this.datumSadnje.Size = new System.Drawing.Size(195, 20);
             this.datumSadnje.TabIndex = 14;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::WindowsFormsApplication1.Properties.Resources.vinograd;
+            this.pictureBox1.Location = new System.Drawing.Point(289, 159);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(328, 188);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 15;
+            this.pictureBox1.TabStop = false;
+            // 
             // vinogradFrm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(663, 371);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.datumSadnje);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.button2);
@@ -146,6 +159,7 @@
             this.Name = "vinogradFrm";
             this.Text = "Vinograd";
             this.Load += new System.EventHandler(this.vinograd_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -166,6 +180,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn vrijemesadnjeDataGridViewTextBoxColumn;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.DateTimePicker datumSadnje;
+        private System.Windows.Forms.PictureBox pictureBox1;
 
 
     }

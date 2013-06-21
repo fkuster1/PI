@@ -15,6 +15,7 @@ namespace WindowsFormsApplication1
         public UnosVinoveLozeFrm()
         {
             InitializeComponent();
+            this.CenterToScreen();
             vinova = new Vinova_loza();
         }
 

@@ -15,13 +15,13 @@ namespace WindowsFormsApplication1
         Form loadanje;
         public PocetnaFrm()
         {
+            Thread loading = new Thread(new ThreadStart(dretvaLoading));//za početak loadanje
+            loading.Start();
             InitializeComponent();
+            this.CenterToScreen();
             CheckForIllegalCrossThreadCalls = false;
-        }
-
-        private void groupBox1_Enter(object sender, EventArgs e)
-        {
-
+            Thread loading2 = new Thread(new ThreadStart(dretvaLoading2));
+            loading2.Start(); 
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -30,6 +30,7 @@ namespace WindowsFormsApplication1
             Thread loading = new Thread(new ThreadStart(dretvaLoading));
             loading.Start();
             forma3.Show();
+            forma3.TopMost = true;
             Thread loading2 = new Thread(new ThreadStart(dretvaLoading2));
             loading2.Start(); 
         }
@@ -40,6 +41,7 @@ namespace WindowsFormsApplication1
             Thread loading = new Thread(new ThreadStart(dretvaLoading));
             loading.Start();
             forma6.Show();
+            forma6.TopMost = true;
             Thread loading2 = new Thread(new ThreadStart(dretvaLoading2));
             loading2.Start();
         }
@@ -50,6 +52,7 @@ namespace WindowsFormsApplication1
             Thread loading = new Thread(new ThreadStart(dretvaLoading));
             loading.Start();
             forma.Show();
+            forma.TopMost = true;
             Thread loading2 = new Thread(new ThreadStart(dretvaLoading2));
             loading2.Start();
         }
@@ -60,6 +63,7 @@ namespace WindowsFormsApplication1
             Thread loading = new Thread(new ThreadStart(dretvaLoading));
             loading.Start();
             forma2.Show();
+            forma2.TopMost = true;
             Thread loading2 = new Thread(new ThreadStart(dretvaLoading2));
             loading2.Start();
         }
@@ -75,6 +79,7 @@ namespace WindowsFormsApplication1
             Thread loading = new Thread(new ThreadStart(dretvaLoading));
             loading.Start();
             forma3.Show();
+            forma3.TopMost = true;
             Thread loading2 = new Thread(new ThreadStart(dretvaLoading2));
             loading2.Start();
         }
@@ -85,6 +90,7 @@ namespace WindowsFormsApplication1
             Thread loading = new Thread(new ThreadStart(dretvaLoading));
             loading.Start();
             forma4.Show();
+            forma4.TopMost = true;
             Thread loading2 = new Thread(new ThreadStart(dretvaLoading2));
             loading2.Start();
         }
@@ -95,6 +101,7 @@ namespace WindowsFormsApplication1
             Thread loading = new Thread(new ThreadStart(dretvaLoading));
             loading.Start();
             forma4.Show();
+            forma4.TopMost = true;
             Thread loading2 = new Thread(new ThreadStart(dretvaLoading2));
             loading2.Start();
         }
@@ -105,9 +112,23 @@ namespace WindowsFormsApplication1
             Thread loading = new Thread(new ThreadStart(dretvaLoading));
             loading.Start();
             forma4.Show();
+            forma4.TopMost = true;
             Thread loading2 = new Thread(new ThreadStart(dretvaLoading2));
             loading2.Start();
         }
+
+        private void button11_Click(object sender, EventArgs e)
+        {
+            var forma4 = new Sorte_Poslovi();
+            Thread loading = new Thread(new ThreadStart(dretvaLoading));
+            loading.Start();
+            forma4.Show();
+            forma4.TopMost = true;
+            Thread loading2 = new Thread(new ThreadStart(dretvaLoading2));
+            loading2.Start();
+
+        }
+
 
         //dretvene metode
         public void dretvaLoading()
@@ -121,15 +142,5 @@ namespace WindowsFormsApplication1
             loadanje.Close();
         }
 
-        private void button11_Click(object sender, EventArgs e)
-        {
-            var forma4 = new Sorte_Poslovi();
-            Thread loading = new Thread(new ThreadStart(dretvaLoading));
-            loading.Start();
-            forma4.Show();
-            Thread loading2 = new Thread(new ThreadStart(dretvaLoading2));
-            loading2.Start();
-            
-        }
     }
 }

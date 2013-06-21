@@ -43,8 +43,8 @@
             this.label7 = new System.Windows.Forms.Label();
             this.datum = new System.Windows.Forms.DateTimePicker();
             this.vinograd = new System.Windows.Forms.ComboBox();
-            this.vinotekaDataSet1 = new WindowsFormsApplication1.VinotekaDataSet1();
             this.vinogradBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.vinotekaDataSet1 = new WindowsFormsApplication1.VinotekaDataSet1();
             this.vinogradTableAdapter = new WindowsFormsApplication1.VinotekaDataSet1TableAdapters.VinogradTableAdapter();
             this.podrum = new System.Windows.Forms.ComboBox();
             this.podrumBindingSource = new System.Windows.Forms.BindingSource(this.components);
@@ -52,10 +52,12 @@
             this.posao = new System.Windows.Forms.ComboBox();
             this.posloviBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.posloviTableAdapter = new WindowsFormsApplication1.VinotekaDataSet1TableAdapters.PosloviTableAdapter();
-            ((System.ComponentModel.ISupportInitialize)(this.vinotekaDataSet1)).BeginInit();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.vinogradBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.vinotekaDataSet1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.podrumBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.posloviBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -192,15 +194,15 @@
             this.vinograd.ValueMember = "Id";
             this.vinograd.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
-            // vinotekaDataSet1
-            // 
-            this.vinotekaDataSet1.DataSetName = "VinotekaDataSet1";
-            this.vinotekaDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
             // vinogradBindingSource
             // 
             this.vinogradBindingSource.DataMember = "Vinograd";
             this.vinogradBindingSource.DataSource = this.vinotekaDataSet1;
+            // 
+            // vinotekaDataSet1
+            // 
+            this.vinotekaDataSet1.DataSetName = "VinotekaDataSet1";
+            this.vinotekaDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // vinogradTableAdapter
             // 
@@ -246,12 +248,23 @@
             // 
             this.posloviTableAdapter.ClearBeforeFill = true;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::WindowsFormsApplication1.Properties.Resources.posao;
+            this.pictureBox1.Location = new System.Drawing.Point(304, 12);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(285, 181);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 19;
+            this.pictureBox1.TabStop = false;
+            // 
             // PosloviFrm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(432, 428);
+            this.ClientSize = new System.Drawing.Size(601, 428);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.posao);
             this.Controls.Add(this.podrum);
             this.Controls.Add(this.vinograd);
@@ -270,10 +283,11 @@
             this.Name = "PosloviFrm";
             this.Text = "Poslovi";
             this.Load += new System.EventHandler(this.Poslovi_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.vinotekaDataSet1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.vinogradBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.vinotekaDataSet1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.podrumBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.posloviBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -303,5 +317,6 @@
         private System.Windows.Forms.ComboBox posao;
         private System.Windows.Forms.BindingSource posloviBindingSource;
         private VinotekaDataSet1TableAdapters.PosloviTableAdapter posloviTableAdapter;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

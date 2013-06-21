@@ -15,6 +15,7 @@ namespace WindowsFormsApplication1
         public VinoUBacvamaFrm()
         {
             InitializeComponent();
+            this.CenterToScreen();
             vinob = new VinoJeUBacvama();
         }
 

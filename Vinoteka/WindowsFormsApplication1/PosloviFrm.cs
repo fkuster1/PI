@@ -15,6 +15,7 @@ namespace WindowsFormsApplication1
         public PosloviFrm()
         {
             InitializeComponent();
+            this.CenterToScreen();
             poslovi = new ObavljeniPoslovi();
         }
 
