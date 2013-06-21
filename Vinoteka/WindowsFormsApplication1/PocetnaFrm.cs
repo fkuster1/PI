@@ -21,7 +21,7 @@ namespace WindowsFormsApplication1
             this.CenterToScreen();
             CheckForIllegalCrossThreadCalls = false;
             Thread loading2 = new Thread(new ThreadStart(dretvaLoading2));
-            loading2.Start(); 
+            loading2.Start();
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -129,6 +129,16 @@ namespace WindowsFormsApplication1
 
         }
 
+        private void button12_Click(object sender, EventArgs e)
+        {
+            var forma4 = new vrijemefrm();
+            Thread loading = new Thread(new ThreadStart(dretvaLoading));
+            loading.Start();
+            forma4.Show();
+            forma4.TopMost = true;
+            Thread loading2 = new Thread(new ThreadStart(dretvaLoading2));
+            loading2.Start();
+        }
 
         //dretvene metode
         public void dretvaLoading()
@@ -141,6 +151,7 @@ namespace WindowsFormsApplication1
         {
             loadanje.Close();
         }
+
 
     }
 }

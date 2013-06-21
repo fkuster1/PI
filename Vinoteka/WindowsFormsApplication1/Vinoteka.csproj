@@ -173,6 +173,12 @@
     <Compile Include="VinoUBacvamaFrm.Designer.cs">
       <DependentUpon>VinoUBacvamaFrm.cs</DependentUpon>
     </Compile>
+    <Compile Include="vrijemefrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="vrijemefrm.Designer.cs">
+      <DependentUpon>vrijemefrm.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="bacveFrm.resx">
       <DependentUpon>bacveFrm.cs</DependentUpon>
     </EmbeddedResource>
@@ -221,6 +227,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="VinoUBacvamaFrm.resx">
       <DependentUpon>VinoUBacvamaFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="vrijemefrm.resx">
+      <DependentUpon>vrijemefrm.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="app.config">
       <SubType>Designer</SubType>

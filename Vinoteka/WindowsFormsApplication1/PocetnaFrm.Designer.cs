@@ -43,6 +43,7 @@
             this.button10 = new System.Windows.Forms.Button();
             this.button11 = new System.Windows.Forms.Button();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.button12 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
@@ -195,6 +196,17 @@
             this.pictureBox2.TabIndex = 13;
             this.pictureBox2.TabStop = false;
             // 
+            // button12
+            // 
+            this.button12.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.button12.Location = new System.Drawing.Point(543, 130);
+            this.button12.Name = "button12";
+            this.button12.Size = new System.Drawing.Size(146, 53);
+            this.button12.TabIndex = 14;
+            this.button12.Text = "Vrijeme ";
+            this.button12.UseVisualStyleBackColor = false;
+            this.button12.Click += new System.EventHandler(this.button12_Click);
+            // 
             // PocetnaFrm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -202,6 +214,7 @@
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(828, 603);
+            this.Controls.Add(this.button12);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.button11);
             this.Controls.Add(this.button10);
@@ -243,6 +256,7 @@
         private System.Windows.Forms.Button button10;
         private System.Windows.Forms.Button button11;
         private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.Button button12;
 
     }
 }
