@@ -62,8 +62,11 @@
     <SignManifests>true</SignManifests>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Web.Services" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -108,6 +111,12 @@
     </Compile>
     <Compile Include="PodrumiFrm.Designer.cs">
       <DependentUpon>PodrumiFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PodrumiReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PodrumiReport.Designer.cs">
+      <DependentUpon>PodrumiReport.cs</DependentUpon>
     </Compile>
     <Compile Include="PosloviFrm.cs">
       <SubType>Form</SubType>
@@ -155,7 +164,19 @@
     <Compile Include="vinogradFrm.Designer.cs">
       <DependentUpon>vinogradFrm.cs</DependentUpon>
     </Compile>
+    <Compile Include="VinogradiReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VinogradiReport.Designer.cs">
+      <DependentUpon>VinogradiReport.cs</DependentUpon>
+    </Compile>
     <Compile Include="VinoJeUBacvama.cs" />
+    <Compile Include="VinoReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VinoReport.Designer.cs">
+      <DependentUpon>VinoReport.cs</DependentUpon>
+    </Compile>
     <Compile Include="VinotekaDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -194,6 +215,9 @@
     <EmbeddedResource Include="PodrumiFrm.resx">
       <DependentUpon>PodrumiFrm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="PodrumiReport.resx">
+      <DependentUpon>PodrumiReport.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="PosloviFrm.resx">
       <DependentUpon>PosloviFrm.cs</DependentUpon>
     </EmbeddedResource>
@@ -210,6 +234,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Report1.rdlc" />
+    <EmbeddedResource Include="Report2.rdlc" />
+    <EmbeddedResource Include="Report3.rdlc" />
     <EmbeddedResource Include="Sorte_Poslovi.resx">
       <DependentUpon>Sorte_Poslovi.cs</DependentUpon>
     </EmbeddedResource>
@@ -224,6 +251,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="vinogradFrm.resx">
       <DependentUpon>vinogradFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VinogradiReport.resx">
+      <DependentUpon>VinogradiReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VinoReport.resx">
+      <DependentUpon>VinoReport.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="VinoUBacvamaFrm.resx">
       <DependentUpon>VinoUBacvamaFrm.cs</DependentUpon>

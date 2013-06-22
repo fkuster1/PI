@@ -9,13 +9,13 @@ namespace WindowsFormsApplication1
     {
         public int BrojButelji
         {
-            get;
-            set;
+            get{ return BrojButelji; }
+            set{ BrojButelji = Math.Abs(value); }
         }
         public float Zapremnina
         {
-            get;
-            set;
+            get{ return Zapremnina; }
+            set{ Zapremnina = Math.Abs(value); }
         }
         public int SadrziVino
         {

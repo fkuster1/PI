@@ -15,8 +15,8 @@ namespace WindowsFormsApplication1
         }
         public int Zapremnina
         {
-            get;
-            set;
+            get { return Zapremnina; }
+            set {Zapremnina=Math.Abs(value);}
         }
         public int Vrsta
         {

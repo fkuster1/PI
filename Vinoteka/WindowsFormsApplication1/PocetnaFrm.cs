@@ -152,6 +152,18 @@ namespace WindowsFormsApplication1
             loadanje.Close();
         }
 
+        private void button13_Click(object sender, EventArgs e)
+        {
+            var forma4 = new VinogradiReport();
+            Thread loading = new Thread(new ThreadStart(dretvaLoading));
+            loading.Start();
+            forma4.Show();
+            forma4.TopMost = true;
+            Thread loading2 = new Thread(new ThreadStart(dretvaLoading2));
+            loading2.Start();
+
+        }
+
 
     }
 }

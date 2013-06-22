@@ -14,8 +14,8 @@ namespace WindowsFormsApplication1
         }
         public int BrojMjesta
         {
-            get;
-            set;
+            get { return BrojMjesta; }
+            set { BrojMjesta = Math.Abs(value); }
         }
         public void UnesiPodrum()
         {

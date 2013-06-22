@@ -44,6 +44,7 @@
             this.button11 = new System.Windows.Forms.Button();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.button12 = new System.Windows.Forms.Button();
+            this.button13 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
@@ -207,6 +208,17 @@
             this.button12.UseVisualStyleBackColor = false;
             this.button12.Click += new System.EventHandler(this.button12_Click);
             // 
+            // button13
+            // 
+            this.button13.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.button13.Location = new System.Drawing.Point(57, 33);
+            this.button13.Name = "button13";
+            this.button13.Size = new System.Drawing.Size(146, 53);
+            this.button13.TabIndex = 15;
+            this.button13.Text = "Vinograd";
+            this.button13.UseVisualStyleBackColor = false;
+            this.button13.Click += new System.EventHandler(this.button13_Click);
+            // 
             // PocetnaFrm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -214,6 +226,7 @@
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(828, 603);
+            this.Controls.Add(this.button13);
             this.Controls.Add(this.button12);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.button11);
@@ -257,6 +270,7 @@
         private System.Windows.Forms.Button button11;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Button button12;
+        private System.Windows.Forms.Button button13;
 
     }
 }

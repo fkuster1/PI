@@ -19,8 +19,8 @@ namespace WindowsFormsApplication1
         }
         public int BrojCokota
         {
-            get;
-            set;
+            get { return BrojCokota; }
+            set { BrojCokota = Math.Abs(value); }
         }
         public void UnesiVinograd()
         {

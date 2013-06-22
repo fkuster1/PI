@@ -96,6 +96,7 @@
             this.poslovikraj = new System.Windows.Forms.DateTimePicker();
             this.slikabacve = new System.Windows.Forms.PictureBox();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
+            this.Vrsta = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.obavljeniposloviBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.vinotekaDataSet1)).BeginInit();
@@ -516,9 +517,10 @@
             this.brojLitaraDataGridViewTextBoxColumn,
             this.dataGridViewTextBoxColumn16,
             this.dataGridViewTextBoxColumn17,
-            this.dataGridViewTextBoxColumn18});
+            this.dataGridViewTextBoxColumn18,
+            this.Vrsta});
             this.dataGridView5.DataSource = this.vinoBindingSource;
-            this.dataGridView5.Location = new System.Drawing.Point(389, 385);
+            this.dataGridView5.Location = new System.Drawing.Point(413, 385);
             this.dataGridView5.Name = "dataGridView5";
             this.dataGridView5.Size = new System.Drawing.Size(435, 150);
             this.dataGridView5.TabIndex = 28;
@@ -645,6 +647,13 @@
             this.slikabacve.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.slikabacve.TabIndex = 37;
             this.slikabacve.TabStop = false;
+            // 
+            // Vrsta
+            // 
+            this.Vrsta.DataPropertyName = "Id";
+            this.Vrsta.HeaderText = "Vrsta";
+            this.Vrsta.Name = "Vrsta";
+            this.Vrsta.ReadOnly = true;
             // 
             // pretraga_i_pregled_statistikeFrm
             // 
@@ -798,5 +807,6 @@
         private System.Windows.Forms.DateTimePicker poslovikraj;
         private System.Windows.Forms.PictureBox slikabacve;
         private System.Windows.Forms.ToolTip toolTip1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Vrsta;
     }
 }
