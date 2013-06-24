@@ -169,8 +169,9 @@
             // 
             // button10
             // 
+            this.button10.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.button10.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.button10.Location = new System.Drawing.Point(543, 492);
+            this.button10.Location = new System.Drawing.Point(516, 484);
             this.button10.Name = "button10";
             this.button10.Size = new System.Drawing.Size(146, 53);
             this.button10.TabIndex = 11;
@@ -223,8 +224,9 @@
             // 
             // button14
             // 
+            this.button14.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.button14.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.button14.Location = new System.Drawing.Point(456, 551);
+            this.button14.Location = new System.Drawing.Point(608, 543);
             this.button14.Name = "button14";
             this.button14.Size = new System.Drawing.Size(146, 53);
             this.button14.TabIndex = 16;

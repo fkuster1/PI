@@ -14,6 +14,7 @@ namespace WindowsFormsApplication1
         public sortiranje()
         {
             InitializeComponent();
+            this.CenterToScreen();
         }
         public struct Bacva
         {
@@ -22,6 +23,12 @@ namespace WindowsFormsApplication1
             public decimal BrojLitara;
             public int Id;
         }
+        public struct Mogucazamjena
+        {
+            public int iz, u, vino;
+            public decimal kolicina;
+        }
+        List<Mogucazamjena> moguca = new List<Mogucazamjena>();
 
         private void sortiranje_Load(object sender, EventArgs e)
         {
@@ -61,10 +68,39 @@ namespace WindowsFormsApplication1
                                     SqlDataReader myReader2 = Baza.Instance.DohvatiDataReader(sql2);
                                     if (!myReader2.HasRows)
                                     {
+                                        myReader2.Close();
                                         string poruka = "Mozete staviti vino iz bacve " + Bacve[j].Id + " u bacvu " + Bacve[i].Id + " , a u bacvi "+Bacve[i].Id+" ce ostati " + zamjena + " litara prostora.\n";
-                                        richTextBox1.Text += poruka;
+                                        lista.Items.Add(poruka);
+                                        Mogucazamjena nova = new Mogucazamjena();
+                                        nova.iz = Bacve[j].Id;
+                                        nova.u = Bacve[i].Id;
+                                        //tolko je puno koda ispod jer obični intersect nije dobro htio vraćati
+                                        string sql3 = "select Id_vina from Vino_u_bacvi where Id_bacve=" + Bacve[i].Id;
+                                        List<int> vina = new List<int>();
+                                        SqlDataReader myReader3 = Baza.Instance.DohvatiDataReader(sql3);
+                                        if (myReader3.HasRows)
+                                        {
+                                            while (myReader3.Read())
+                                            {
+                                                vina.Add((int)myReader3[0]);
+                                            }
+                                        }
+                                        myReader3.Close();
+                                        string sql4 = "select Id_vina from Vino_u_bacvi where Id_bacve=" + Bacve[j].Id;
+                                        SqlDataReader myReader4 = Baza.Instance.DohvatiDataReader(sql3);
+                                        int idvina=-1;
+                                        if (myReader4.HasRows)
+                                        {
+                                            while (myReader4.Read())
+                                            {
+                                                if (vina.Contains((int)myReader4[0])) idvina=(int)myReader4[0];
+                                            }
+                                        }
+                                        myReader4.Close();
+                                        nova.vino = idvina;
+                                        nova.kolicina = Bacve[j].BrojLitara;
+                                        moguca.Add(nova);
                                     }
-                                    myReader2.Close();
                                 }
                             }
                         }
@@ -72,6 +108,27 @@ namespace WindowsFormsApplication1
 
                 }
             }
+        }
+
+        private void button14_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            int trenutni = lista.SelectedIndex;
+            if (lista.SelectedIndex >= 0)
+            {
+                MessageBox.Show(moguca[trenutni].iz + " " + moguca[trenutni].vino);
+                Baza.Instance.IzvrsiUpit("delete from Vino_u_bacvi where Id_bacve="+moguca[trenutni].iz+" and Id_vina="+moguca[trenutni].vino);
+                decimal skolicina = Convert.ToDecimal(Baza.Instance.DohvatiVrijednost("select BrojLitara from Vino_u_bacvi where Id_bacve=" + moguca[trenutni].u));
+                MessageBox.Show(skolicina + " " + moguca[trenutni].kolicina);
+                decimal nkolicina = skolicina + moguca[trenutni].kolicina;
+                MessageBox.Show(nkolicina + " " + moguca[trenutni].u);
+                Baza.Instance.IzvrsiUpit("update Vino_u_bacvi set BrojLitara="+nkolicina+" where Id_bacve=" + moguca[trenutni].u + " and Id_vina=" + moguca[trenutni].vino);
+            }
+            else MessageBox.Show("Morate odabrati jednu vrijednost!");
         }
     }
 }

@@ -28,25 +28,55 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.button14 = new System.Windows.Forms.Button();
+            this.lista = new System.Windows.Forms.ListBox();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // richTextBox1
+            // button14
             // 
-            this.richTextBox1.Location = new System.Drawing.Point(28, 35);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(221, 174);
-            this.richTextBox1.TabIndex = 0;
-            this.richTextBox1.Text = "";
+            this.button14.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.button14.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.button14.Location = new System.Drawing.Point(599, 460);
+            this.button14.Name = "button14";
+            this.button14.Size = new System.Drawing.Size(146, 53);
+            this.button14.TabIndex = 17;
+            this.button14.Text = "Zatvori";
+            this.button14.UseVisualStyleBackColor = false;
+            this.button14.Click += new System.EventHandler(this.button14_Click);
+            // 
+            // lista
+            // 
+            this.lista.FormattingEnabled = true;
+            this.lista.Location = new System.Drawing.Point(12, 21);
+            this.lista.Name = "lista";
+            this.lista.Size = new System.Drawing.Size(608, 407);
+            this.lista.TabIndex = 18;
+            // 
+            // button1
+            // 
+            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.button1.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.button1.Location = new System.Drawing.Point(28, 460);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(146, 53);
+            this.button1.TabIndex = 19;
+            this.button1.Text = "Izvrši odabrano pretakanje";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // sortiranje
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(284, 262);
-            this.Controls.Add(this.richTextBox1);
+            this.ClientSize = new System.Drawing.Size(773, 537);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.lista);
+            this.Controls.Add(this.button14);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "sortiranje";
             this.Text = "sortiranje";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.sortiranje_Load);
             this.ResumeLayout(false);
 
@@ -54,6 +84,8 @@
 
         #endregion
 
-        private System.Windows.Forms.RichTextBox richTextBox1;
+        private System.Windows.Forms.Button button14;
+        private System.Windows.Forms.ListBox lista;
+        private System.Windows.Forms.Button button1;
     }
 }
