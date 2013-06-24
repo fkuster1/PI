@@ -97,6 +97,8 @@
             this.poslovikraj = new System.Windows.Forms.DateTimePicker();
             this.slikabacve = new System.Windows.Forms.PictureBox();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.obavljeniposloviBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.vinotekaDataSet1)).BeginInit();
@@ -113,6 +115,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.vinoBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.slikabacve)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridView1
@@ -128,7 +132,7 @@
             this.dataGridViewTextBoxColumn6,
             this.podrumIdDataGridViewTextBoxColumn});
             this.dataGridView1.DataSource = this.obavljeniposloviBindingSource;
-            this.dataGridView1.Location = new System.Drawing.Point(15, 88);
+            this.dataGridView1.Location = new System.Drawing.Point(39, 130);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(351, 108);
             this.dataGridView1.TabIndex = 0;
@@ -192,7 +196,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(291, 45);
+            this.button1.Location = new System.Drawing.Point(315, 87);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 1;
@@ -205,7 +209,7 @@
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Cyan;
             this.label1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label1.Location = new System.Drawing.Point(78, 9);
+            this.label1.Location = new System.Drawing.Point(102, 51);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(138, 15);
             this.label1.TabIndex = 2;
@@ -215,7 +219,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.label2.Location = new System.Drawing.Point(12, 51);
+            this.label2.Location = new System.Drawing.Point(36, 93);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(21, 13);
             this.label2.TabIndex = 4;
@@ -225,7 +229,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.label3.Location = new System.Drawing.Point(152, 51);
+            this.label3.Location = new System.Drawing.Point(176, 93);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(21, 13);
             this.label3.TabIndex = 6;
@@ -241,7 +245,7 @@
             this.dataGridViewTextBoxColumn12,
             this.dataGridViewTextBoxColumn13});
             this.dataGridView2.DataSource = this.vinogradBindingSource;
-            this.dataGridView2.Location = new System.Drawing.Point(15, 317);
+            this.dataGridView2.Location = new System.Drawing.Point(39, 504);
             this.dataGridView2.Name = "dataGridView2";
             this.dataGridView2.Size = new System.Drawing.Size(351, 119);
             this.dataGridView2.TabIndex = 7;
@@ -282,7 +286,7 @@
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Cyan;
             this.label4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label4.Location = new System.Drawing.Point(78, 236);
+            this.label4.Location = new System.Drawing.Point(102, 423);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(182, 15);
             this.label4.TabIndex = 8;
@@ -292,7 +296,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.label5.Location = new System.Drawing.Point(152, 286);
+            this.label5.Location = new System.Drawing.Point(176, 473);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(21, 13);
             this.label5.TabIndex = 18;
@@ -302,7 +306,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.label6.Location = new System.Drawing.Point(12, 286);
+            this.label6.Location = new System.Drawing.Point(36, 473);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(21, 13);
             this.label6.TabIndex = 17;
@@ -310,7 +314,7 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(291, 280);
+            this.button2.Location = new System.Drawing.Point(315, 467);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 23);
             this.button2.TabIndex = 15;
@@ -323,7 +327,7 @@
             this.label7.AutoSize = true;
             this.label7.BackColor = System.Drawing.Color.Cyan;
             this.label7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label7.Location = new System.Drawing.Point(456, 9);
+            this.label7.Location = new System.Drawing.Point(888, 62);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(123, 15);
             this.label7.TabIndex = 20;
@@ -332,7 +336,7 @@
             // splitContainer1
             // 
             this.splitContainer1.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.splitContainer1.Location = new System.Drawing.Point(389, 45);
+            this.splitContainer1.Location = new System.Drawing.Point(821, 98);
             this.splitContainer1.Name = "splitContainer1";
             this.splitContainer1.Orientation = System.Windows.Forms.Orientation.Horizontal;
             // 
@@ -453,7 +457,7 @@
             // kraj
             // 
             this.kraj.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.kraj.Location = new System.Drawing.Point(575, 349);
+            this.kraj.Location = new System.Drawing.Point(996, 468);
             this.kraj.Name = "kraj";
             this.kraj.Size = new System.Drawing.Size(84, 20);
             this.kraj.TabIndex = 27;
@@ -462,7 +466,7 @@
             // 
             this.label8.AutoSize = true;
             this.label8.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.label8.Location = new System.Drawing.Point(541, 352);
+            this.label8.Location = new System.Drawing.Point(962, 471);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(21, 13);
             this.label8.TabIndex = 26;
@@ -472,7 +476,7 @@
             // 
             this.label9.AutoSize = true;
             this.label9.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.label9.Location = new System.Drawing.Point(401, 352);
+            this.label9.Location = new System.Drawing.Point(822, 471);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(21, 13);
             this.label9.TabIndex = 25;
@@ -481,14 +485,14 @@
             // pocetak
             // 
             this.pocetak.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.pocetak.Location = new System.Drawing.Point(439, 349);
+            this.pocetak.Location = new System.Drawing.Point(860, 468);
             this.pocetak.Name = "pocetak";
             this.pocetak.Size = new System.Drawing.Size(84, 20);
             this.pocetak.TabIndex = 24;
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(680, 346);
+            this.button3.Location = new System.Drawing.Point(1101, 465);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(75, 23);
             this.button3.TabIndex = 23;
@@ -501,7 +505,7 @@
             this.label10.AutoSize = true;
             this.label10.BackColor = System.Drawing.Color.Cyan;
             this.label10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label10.Location = new System.Drawing.Point(467, 302);
+            this.label10.Location = new System.Drawing.Point(888, 421);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(171, 15);
             this.label10.TabIndex = 22;
@@ -520,7 +524,7 @@
             this.dataGridViewTextBoxColumn18,
             this.Vrsta});
             this.dataGridView5.DataSource = this.vinoBindingSource;
-            this.dataGridView5.Location = new System.Drawing.Point(389, 385);
+            this.dataGridView5.Location = new System.Drawing.Point(810, 504);
             this.dataGridView5.Name = "dataGridView5";
             this.dataGridView5.Size = new System.Drawing.Size(435, 150);
             this.dataGridView5.TabIndex = 28;
@@ -579,7 +583,7 @@
             // 
             this.label11.AutoSize = true;
             this.label11.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.label11.Location = new System.Drawing.Point(12, 581);
+            this.label11.Location = new System.Drawing.Point(12, 746);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(228, 13);
             this.label11.TabIndex = 29;
@@ -588,7 +592,7 @@
             // button4
             // 
             this.button4.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.button4.Location = new System.Drawing.Point(15, 477);
+            this.button4.Location = new System.Drawing.Point(443, 701);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(351, 58);
             this.button4.TabIndex = 30;
@@ -618,28 +622,28 @@
             // 
             // datepoc
             // 
-            this.datepoc.Location = new System.Drawing.Point(50, 286);
+            this.datepoc.Location = new System.Drawing.Point(74, 473);
             this.datepoc.Name = "datepoc";
             this.datepoc.Size = new System.Drawing.Size(84, 20);
             this.datepoc.TabIndex = 33;
             // 
             // datekraj
             // 
-            this.datekraj.Location = new System.Drawing.Point(186, 286);
+            this.datekraj.Location = new System.Drawing.Point(210, 473);
             this.datekraj.Name = "datekraj";
             this.datekraj.Size = new System.Drawing.Size(99, 20);
             this.datekraj.TabIndex = 34;
             // 
             // poslovipoc
             // 
-            this.poslovipoc.Location = new System.Drawing.Point(50, 47);
+            this.poslovipoc.Location = new System.Drawing.Point(74, 89);
             this.poslovipoc.Name = "poslovipoc";
             this.poslovipoc.Size = new System.Drawing.Size(96, 20);
             this.poslovipoc.TabIndex = 35;
             // 
             // poslovikraj
             // 
-            this.poslovikraj.Location = new System.Drawing.Point(180, 48);
+            this.poslovikraj.Location = new System.Drawing.Point(204, 90);
             this.poslovikraj.Name = "poslovikraj";
             this.poslovikraj.Size = new System.Drawing.Size(105, 20);
             this.poslovikraj.TabIndex = 36;
@@ -648,12 +652,32 @@
             // 
             this.slikabacve.BackColor = System.Drawing.SystemColors.Window;
             this.slikabacve.Image = global::WindowsFormsApplication1.Properties.Resources.Barrel4;
-            this.slikabacve.Location = new System.Drawing.Point(771, 280);
+            this.slikabacve.Location = new System.Drawing.Point(1203, 333);
             this.slikabacve.Name = "slikabacve";
             this.slikabacve.Size = new System.Drawing.Size(53, 59);
             this.slikabacve.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.slikabacve.TabIndex = 37;
             this.slikabacve.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(415, 215);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(391, 257);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 38;
+            this.pictureBox1.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(430, 51);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(360, 100);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox2.TabIndex = 39;
+            this.pictureBox2.TabStop = false;
             // 
             // pretraga_i_pregled_statistikeFrm
             // 
@@ -661,7 +685,9 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(846, 614);
+            this.ClientSize = new System.Drawing.Size(1366, 768);
+            this.Controls.Add(this.pictureBox2);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.slikabacve);
             this.Controls.Add(this.poslovikraj);
             this.Controls.Add(this.poslovipoc);
@@ -691,7 +717,6 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "pretraga_i_pregled_statistikeFrm";
             this.Text = "Pretraga i pregled statistike";
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.pretraga_i_pregled_statistike_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.obavljeniposloviBindingSource)).EndInit();
@@ -709,6 +734,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.vinoBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.slikabacve)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -810,5 +837,7 @@
         private System.Windows.Forms.PictureBox slikabacve;
         private System.Windows.Forms.ToolTip toolTip1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Vrsta;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pictureBox2;
     }
 }

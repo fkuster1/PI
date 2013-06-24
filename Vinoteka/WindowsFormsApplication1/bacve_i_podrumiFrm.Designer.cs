@@ -44,7 +44,7 @@
             // button1
             // 
             this.button1.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.button1.Location = new System.Drawing.Point(30, 71);
+            this.button1.Location = new System.Drawing.Point(112, 294);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(222, 72);
             this.button1.TabIndex = 0;
@@ -55,7 +55,7 @@
             // button2
             // 
             this.button2.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.button2.Location = new System.Drawing.Point(30, 207);
+            this.button2.Location = new System.Drawing.Point(112, 430);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(222, 72);
             this.button2.TabIndex = 1;
@@ -67,9 +67,9 @@
             // 
             this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(298, 71);
+            this.pictureBox1.Location = new System.Drawing.Point(594, 155);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(169, 120);
+            this.pictureBox1.Size = new System.Drawing.Size(276, 212);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 2;
             this.pictureBox1.TabStop = false;
@@ -78,9 +78,9 @@
             // 
             this.pictureBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(534, 29);
+            this.pictureBox2.Location = new System.Drawing.Point(1008, 307);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(151, 212);
+            this.pictureBox2.Size = new System.Drawing.Size(256, 327);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 3;
             this.pictureBox2.TabStop = false;
@@ -89,9 +89,9 @@
             // 
             this.pictureBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(351, 270);
+            this.pictureBox3.Location = new System.Drawing.Point(484, 497);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(248, 131);
+            this.pictureBox3.Size = new System.Drawing.Size(446, 241);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox3.TabIndex = 4;
             this.pictureBox3.TabStop = false;
@@ -99,7 +99,7 @@
             // button3
             // 
             this.button3.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.button3.Location = new System.Drawing.Point(30, 339);
+            this.button3.Location = new System.Drawing.Point(112, 562);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(222, 72);
             this.button3.TabIndex = 5;
@@ -111,7 +111,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.label1.Location = new System.Drawing.Point(24, 423);
+            this.label1.Location = new System.Drawing.Point(12, 746);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(228, 13);
             this.label1.TabIndex = 8;
@@ -122,7 +122,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(707, 442);
+            this.ClientSize = new System.Drawing.Size(1366, 768);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.pictureBox3);
@@ -133,7 +133,6 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "bacve_i_podrumiFrm";
             this.Text = "Bacve i podrumi";
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();

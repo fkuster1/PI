@@ -48,10 +48,14 @@
             this.label7 = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
             this.preostalooo = new System.Windows.Forms.TextBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.vinoBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.vinotekaDataSet1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bacveBindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bacveBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -59,7 +63,7 @@
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.label1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label1.Location = new System.Drawing.Point(9, 22);
+            this.label1.Location = new System.Drawing.Point(352, 286);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(40, 15);
             this.label1.TabIndex = 0;
@@ -70,7 +74,7 @@
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.label2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label2.Location = new System.Drawing.Point(9, 60);
+            this.label2.Location = new System.Drawing.Point(352, 324);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(30, 15);
             this.label2.TabIndex = 1;
@@ -79,9 +83,9 @@
             // button1
             // 
             this.button1.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.button1.Location = new System.Drawing.Point(94, 165);
+            this.button1.Location = new System.Drawing.Point(352, 535);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(165, 39);
+            this.button1.Size = new System.Drawing.Size(409, 57);
             this.button1.TabIndex = 2;
             this.button1.Text = "Spremi";
             this.button1.UseVisualStyleBackColor = false;
@@ -92,7 +96,7 @@
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.label3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label3.Location = new System.Drawing.Point(9, 136);
+            this.label3.Location = new System.Drawing.Point(352, 400);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(52, 15);
             this.label3.TabIndex = 3;
@@ -101,9 +105,9 @@
             // brlitara
             // 
             this.brlitara.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.brlitara.Location = new System.Drawing.Point(94, 131);
+            this.brlitara.Location = new System.Drawing.Point(484, 395);
             this.brlitara.Name = "brlitara";
-            this.brlitara.Size = new System.Drawing.Size(165, 20);
+            this.brlitara.Size = new System.Drawing.Size(277, 20);
             this.brlitara.TabIndex = 4;
             // 
             // vino
@@ -112,9 +116,9 @@
             this.vino.DataSource = this.vinoBindingSource;
             this.vino.DisplayMember = "Id";
             this.vino.FormattingEnabled = true;
-            this.vino.Location = new System.Drawing.Point(94, 57);
+            this.vino.Location = new System.Drawing.Point(484, 321);
             this.vino.Name = "vino";
-            this.vino.Size = new System.Drawing.Size(165, 21);
+            this.vino.Size = new System.Drawing.Size(277, 21);
             this.vino.TabIndex = 5;
             this.vino.ValueMember = "Id";
             // 
@@ -138,9 +142,9 @@
             this.bacva.DataSource = this.bacveBindingSource1;
             this.bacva.DisplayMember = "Id";
             this.bacva.FormattingEnabled = true;
-            this.bacva.Location = new System.Drawing.Point(94, 21);
+            this.bacva.Location = new System.Drawing.Point(484, 285);
             this.bacva.Name = "bacva";
-            this.bacva.Size = new System.Drawing.Size(165, 21);
+            this.bacva.Size = new System.Drawing.Size(277, 21);
             this.bacva.TabIndex = 6;
             this.bacva.ValueMember = "Id";
             this.bacva.SelectedIndexChanged += new System.EventHandler(this.bacva_SelectedIndexChanged);
@@ -172,7 +176,7 @@
             this.preostalotxt.AutoSize = true;
             this.preostalotxt.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.preostalotxt.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.preostalotxt.Location = new System.Drawing.Point(9, 99);
+            this.preostalotxt.Location = new System.Drawing.Point(352, 363);
             this.preostalotxt.Name = "preostalotxt";
             this.preostalotxt.Size = new System.Drawing.Size(59, 15);
             this.preostalotxt.TabIndex = 8;
@@ -182,7 +186,7 @@
             // 
             this.label7.AutoSize = true;
             this.label7.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.label7.Location = new System.Drawing.Point(9, 279);
+            this.label7.Location = new System.Drawing.Point(31, 733);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(228, 13);
             this.label7.TabIndex = 15;
@@ -191,9 +195,9 @@
             // button2
             // 
             this.button2.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.button2.Location = new System.Drawing.Point(94, 221);
+            this.button2.Location = new System.Drawing.Point(352, 666);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(165, 39);
+            this.button2.Size = new System.Drawing.Size(409, 57);
             this.button2.TabIndex = 16;
             this.button2.Text = "Zatvori";
             this.button2.UseVisualStyleBackColor = false;
@@ -202,17 +206,40 @@
             // preostalooo
             // 
             this.preostalooo.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.preostalooo.Location = new System.Drawing.Point(94, 94);
+            this.preostalooo.Location = new System.Drawing.Point(484, 358);
             this.preostalooo.Name = "preostalooo";
-            this.preostalooo.Size = new System.Drawing.Size(165, 20);
+            this.preostalooo.Size = new System.Drawing.Size(277, 20);
             this.preostalooo.TabIndex = 17;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(856, 285);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(291, 375);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 18;
+            this.pictureBox1.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(542, 40);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(360, 100);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox2.TabIndex = 19;
+            this.pictureBox2.TabStop = false;
             // 
             // VinoUBacvamaFrm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(292, 301);
+            this.ClientSize = new System.Drawing.Size(1366, 768);
+            this.Controls.Add(this.pictureBox2);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.preostalooo);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.label7);
@@ -228,12 +255,13 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "VinoUBacvamaFrm";
             this.Text = "VinuUBacvamaFrm";
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.VinuUBacvamaFrm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.vinoBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.vinotekaDataSet1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bacveBindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bacveBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -259,5 +287,7 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.TextBox preostalooo;
         private System.Windows.Forms.BindingSource bacveBindingSource1;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pictureBox2;
     }
 }

@@ -39,7 +39,9 @@
             this.label6 = new System.Windows.Forms.Label();
             this.datumSadnje = new System.Windows.Forms.DateTimePicker();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -47,7 +49,7 @@
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.label1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label1.Location = new System.Drawing.Point(26, 29);
+            this.label1.Location = new System.Drawing.Point(364, 346);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(42, 15);
             this.label1.TabIndex = 0;
@@ -58,7 +60,7 @@
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.label2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label2.Location = new System.Drawing.Point(26, 76);
+            this.label2.Location = new System.Drawing.Point(364, 393);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(63, 15);
             this.label2.TabIndex = 1;
@@ -69,7 +71,7 @@
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.label3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label3.Location = new System.Drawing.Point(26, 122);
+            this.label3.Location = new System.Drawing.Point(364, 439);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(74, 15);
             this.label3.TabIndex = 2;
@@ -78,25 +80,25 @@
             // adresa
             // 
             this.adresa.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.adresa.Location = new System.Drawing.Point(111, 24);
+            this.adresa.Location = new System.Drawing.Point(493, 341);
             this.adresa.Name = "adresa";
-            this.adresa.Size = new System.Drawing.Size(195, 20);
+            this.adresa.Size = new System.Drawing.Size(238, 20);
             this.adresa.TabIndex = 3;
             // 
             // broj_cokota
             // 
             this.broj_cokota.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.broj_cokota.Location = new System.Drawing.Point(111, 69);
+            this.broj_cokota.Location = new System.Drawing.Point(493, 386);
             this.broj_cokota.Name = "broj_cokota";
-            this.broj_cokota.Size = new System.Drawing.Size(195, 20);
+            this.broj_cokota.Size = new System.Drawing.Size(238, 20);
             this.broj_cokota.TabIndex = 4;
             // 
             // button1
             // 
             this.button1.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.button1.Location = new System.Drawing.Point(26, 170);
+            this.button1.Location = new System.Drawing.Point(773, 539);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(280, 43);
+            this.button1.Size = new System.Drawing.Size(297, 75);
             this.button1.TabIndex = 6;
             this.button1.Text = "Spremi";
             this.button1.UseVisualStyleBackColor = false;
@@ -105,9 +107,9 @@
             // button2
             // 
             this.button2.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.button2.Location = new System.Drawing.Point(26, 240);
+            this.button2.Location = new System.Drawing.Point(434, 539);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(280, 43);
+            this.button2.Size = new System.Drawing.Size(297, 75);
             this.button2.TabIndex = 7;
             this.button2.Text = "Zatvori";
             this.button2.UseVisualStyleBackColor = false;
@@ -117,7 +119,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.label6.Location = new System.Drawing.Point(12, 315);
+            this.label6.Location = new System.Drawing.Point(12, 746);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(228, 13);
             this.label6.TabIndex = 13;
@@ -125,27 +127,38 @@
             // 
             // datumSadnje
             // 
-            this.datumSadnje.Location = new System.Drawing.Point(111, 122);
+            this.datumSadnje.Location = new System.Drawing.Point(493, 439);
             this.datumSadnje.Name = "datumSadnje";
-            this.datumSadnje.Size = new System.Drawing.Size(195, 20);
+            this.datumSadnje.Size = new System.Drawing.Size(238, 20);
             this.datumSadnje.TabIndex = 14;
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::WindowsFormsApplication1.Properties.Resources.vinograd;
-            this.pictureBox1.Location = new System.Drawing.Point(343, 60);
+            this.pictureBox1.Location = new System.Drawing.Point(773, 271);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(299, 203);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 15;
             this.pictureBox1.TabStop = false;
             // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(525, 74);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(360, 100);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox2.TabIndex = 16;
+            this.pictureBox2.TabStop = false;
+            // 
             // vinogradFrm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(657, 341);
+            this.ClientSize = new System.Drawing.Size(1366, 768);
+            this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.datumSadnje);
             this.Controls.Add(this.label6);
@@ -159,9 +172,9 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "vinogradFrm";
             this.Text = "Vinograd";
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.vinograd_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -183,6 +196,7 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.DateTimePicker datumSadnje;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pictureBox2;
 
 
     }
