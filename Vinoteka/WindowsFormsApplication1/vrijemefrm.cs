@@ -17,5 +17,10 @@ namespace WindowsFormsApplication1
             this.CenterToScreen();
             webBrowser1.Navigate("https://www.google.hr/search?q=vrijeme");
         }
+
+        private void button14_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

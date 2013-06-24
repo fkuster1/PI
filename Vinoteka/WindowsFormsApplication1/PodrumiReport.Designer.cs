@@ -30,13 +30,23 @@
         {
             this.components = new System.ComponentModel.Container();
             Microsoft.Reporting.WinForms.ReportDataSource reportDataSource1 = new Microsoft.Reporting.WinForms.ReportDataSource();
-            this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
-            this.VinotekaDataSet1 = new WindowsFormsApplication1.VinotekaDataSet1();
             this.PodrumBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.VinotekaDataSet1 = new WindowsFormsApplication1.VinotekaDataSet1();
+            this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
             this.PodrumTableAdapter = new WindowsFormsApplication1.VinotekaDataSet1TableAdapters.PodrumTableAdapter();
-            ((System.ComponentModel.ISupportInitialize)(this.VinotekaDataSet1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PodrumBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.VinotekaDataSet1)).BeginInit();
             this.SuspendLayout();
+            // 
+            // PodrumBindingSource
+            // 
+            this.PodrumBindingSource.DataMember = "Podrum";
+            this.PodrumBindingSource.DataSource = this.VinotekaDataSet1;
+            // 
+            // VinotekaDataSet1
+            // 
+            this.VinotekaDataSet1.DataSetName = "VinotekaDataSet1";
+            this.VinotekaDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // reportViewer1
             // 
@@ -50,16 +60,6 @@
             this.reportViewer1.Size = new System.Drawing.Size(284, 262);
             this.reportViewer1.TabIndex = 0;
             // 
-            // VinotekaDataSet1
-            // 
-            this.VinotekaDataSet1.DataSetName = "VinotekaDataSet1";
-            this.VinotekaDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // PodrumBindingSource
-            // 
-            this.PodrumBindingSource.DataMember = "Podrum";
-            this.PodrumBindingSource.DataSource = this.VinotekaDataSet1;
-            // 
             // PodrumTableAdapter
             // 
             this.PodrumTableAdapter.ClearBeforeFill = true;
@@ -70,11 +70,13 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(284, 262);
             this.Controls.Add(this.reportViewer1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "PodrumiReport";
             this.Text = "PodrumiReport";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.PodrumiReport_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.VinotekaDataSet1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PodrumBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.VinotekaDataSet1)).EndInit();
             this.ResumeLayout(false);
 
         }

@@ -6,6 +6,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace WindowsFormsApplication1
 {
@@ -17,6 +18,29 @@ namespace WindowsFormsApplication1
             InitializeComponent();
             this.CenterToScreen();
             poslovi = new ObavljeniPoslovi();
+            DateTime d = DateTime.Now;
+            DateTime prije1 = d.AddDays(-15);
+            prije1 = prije1.AddYears(-1);
+            DateTime kasnije1 = d.AddDays(15);
+            kasnije1 = kasnije1.AddYears(-1);
+            DateTime prije2 = d.AddDays(-15);
+            prije2 = prije2.AddYears(-2);
+            DateTime kasnije2 = d.AddDays(15);
+            kasnije2 = kasnije2.AddYears(-2);
+            DateTime prije3 = d.AddDays(-15);
+            prije3 = prije3.AddYears(-3);
+            DateTime kasnije3 = d.AddDays(15);
+            kasnije3 = kasnije3.AddYears(-3);
+            SqlDataReader reader = Baza.Instance.DohvatiDataReader("select Opis, Datum, Ime from Obavljeni_poslovi, Poslovi where Poslovi.Id=Obavljeni_poslovi.Id_Posla;");
+            while (reader.Read())
+            {
+                string datum = reader[1].ToString();
+                DateTime dp = Convert.ToDateTime(datum);
+                if (dp>prije1 && dp<kasnije1 || dp>prije2 && dp<kasnije2 || dp>prije3 && dp<kasnije3) 
+                {
+                    listBox1.Items.Add("Datuma " + datum.Trim() + " ste obavili posao " + reader[2].ToString().Trim() + " sa opisom " + reader[0].ToString().Trim() + ".");
+                }
+            }
         }
 
         private void Poslovi_Load(object sender, EventArgs e)

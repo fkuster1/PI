@@ -67,7 +67,6 @@ namespace WindowsFormsApplication1
         {
             
             int idbacva = Convert.ToInt32(bacva.SelectedValue);
-            pomoc.Text = idbacva.ToString();
             object pom1 = Baza.Instance.DohvatiVrijednost("select Zapremnina from Bacve where Id=" + idbacva + ";");
             object pom = Baza.Instance.DohvatiVrijednost("select sum(BrojLitara) from Vino_u_bacvi where Id_bacve=" + idbacva + ";");
             if (DBNull.Value != pom1)

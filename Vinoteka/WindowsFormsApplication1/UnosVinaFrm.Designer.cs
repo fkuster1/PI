@@ -270,8 +270,10 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.godina);
             this.Controls.Add(this.label1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "UnosVinaFrm";
             this.Text = "UnosVinaFrm";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.UnosVinaFrm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.vrstavinaBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.vinotekaDataSet1)).EndInit();

@@ -197,8 +197,10 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "UnosVinoveLozeFrm";
             this.Text = "UnosVinoveLozeFrm";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.UnosVinoveLozeFrm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.sortaBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.vinotekaDataSet1)).EndInit();

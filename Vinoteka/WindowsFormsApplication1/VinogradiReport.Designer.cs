@@ -94,8 +94,10 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(284, 262);
             this.Controls.Add(this.reportViewer1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "VinogradiReport";
             this.Text = "VinogradiReport";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.VinogradiReport_Load);
             ((System.ComponentModel.ISupportInitialize)(this.VinogradBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.VinotekaDataSet1)).EndInit();

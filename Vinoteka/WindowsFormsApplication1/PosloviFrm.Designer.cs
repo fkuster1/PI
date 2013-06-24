@@ -53,11 +53,14 @@
             this.posloviBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.posloviTableAdapter = new WindowsFormsApplication1.VinotekaDataSet1TableAdapters.PosloviTableAdapter();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.obavijesti = new System.Windows.Forms.GroupBox();
+            this.listBox1 = new System.Windows.Forms.ListBox();
             ((System.ComponentModel.ISupportInitialize)(this.vinogradBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.vinotekaDataSet1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.podrumBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.posloviBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.obavijesti.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -65,7 +68,7 @@
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.label1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label1.Location = new System.Drawing.Point(28, 28);
+            this.label1.Location = new System.Drawing.Point(35, 143);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(51, 15);
             this.label1.TabIndex = 0;
@@ -76,7 +79,7 @@
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.label2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label2.Location = new System.Drawing.Point(28, 85);
+            this.label2.Location = new System.Drawing.Point(35, 200);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(45, 15);
             this.label2.TabIndex = 1;
@@ -87,7 +90,7 @@
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.label3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label3.Location = new System.Drawing.Point(28, 137);
+            this.label3.Location = new System.Drawing.Point(35, 252);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(39, 15);
             this.label3.TabIndex = 2;
@@ -98,7 +101,7 @@
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.label4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label4.Location = new System.Drawing.Point(28, 199);
+            this.label4.Location = new System.Drawing.Point(35, 314);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(58, 15);
             this.label4.TabIndex = 6;
@@ -107,7 +110,7 @@
             // opis
             // 
             this.opis.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.opis.Location = new System.Drawing.Point(124, 199);
+            this.opis.Location = new System.Drawing.Point(131, 314);
             this.opis.Multiline = true;
             this.opis.Name = "opis";
             this.opis.Size = new System.Drawing.Size(434, 103);
@@ -118,7 +121,7 @@
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.label5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label5.Location = new System.Drawing.Point(31, 325);
+            this.label5.Location = new System.Drawing.Point(38, 440);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(40, 15);
             this.label5.TabIndex = 8;
@@ -129,7 +132,7 @@
             this.label6.AutoSize = true;
             this.label6.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.label6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label6.Location = new System.Drawing.Point(31, 364);
+            this.label6.Location = new System.Drawing.Point(38, 479);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(47, 15);
             this.label6.TabIndex = 10;
@@ -138,7 +141,7 @@
             // trajanje
             // 
             this.trajanje.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.trajanje.Location = new System.Drawing.Point(124, 361);
+            this.trajanje.Location = new System.Drawing.Point(131, 476);
             this.trajanje.Name = "trajanje";
             this.trajanje.Size = new System.Drawing.Size(138, 20);
             this.trajanje.TabIndex = 11;
@@ -146,7 +149,7 @@
             // button1
             // 
             this.button1.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.button1.Location = new System.Drawing.Point(273, 319);
+            this.button1.Location = new System.Drawing.Point(280, 434);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(285, 35);
             this.button1.TabIndex = 12;
@@ -157,7 +160,7 @@
             // button2
             // 
             this.button2.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.button2.Location = new System.Drawing.Point(273, 370);
+            this.button2.Location = new System.Drawing.Point(280, 485);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(285, 35);
             this.button2.TabIndex = 13;
@@ -169,7 +172,7 @@
             // 
             this.label7.AutoSize = true;
             this.label7.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.label7.Location = new System.Drawing.Point(12, 406);
+            this.label7.Location = new System.Drawing.Point(19, 521);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(228, 13);
             this.label7.TabIndex = 14;
@@ -177,7 +180,7 @@
             // 
             // datum
             // 
-            this.datum.Location = new System.Drawing.Point(124, 319);
+            this.datum.Location = new System.Drawing.Point(131, 434);
             this.datum.Name = "datum";
             this.datum.Size = new System.Drawing.Size(138, 20);
             this.datum.TabIndex = 15;
@@ -188,7 +191,7 @@
             this.vinograd.DataSource = this.vinogradBindingSource;
             this.vinograd.DisplayMember = "Adresa";
             this.vinograd.FormattingEnabled = true;
-            this.vinograd.Location = new System.Drawing.Point(122, 28);
+            this.vinograd.Location = new System.Drawing.Point(129, 143);
             this.vinograd.Name = "vinograd";
             this.vinograd.Size = new System.Drawing.Size(140, 21);
             this.vinograd.TabIndex = 16;
@@ -215,7 +218,7 @@
             this.podrum.DataSource = this.podrumBindingSource;
             this.podrum.DisplayMember = "Adresa";
             this.podrum.FormattingEnabled = true;
-            this.podrum.Location = new System.Drawing.Point(122, 85);
+            this.podrum.Location = new System.Drawing.Point(129, 200);
             this.podrum.Name = "podrum";
             this.podrum.Size = new System.Drawing.Size(140, 21);
             this.podrum.TabIndex = 17;
@@ -236,7 +239,7 @@
             this.posao.DataSource = this.posloviBindingSource;
             this.posao.DisplayMember = "Ime";
             this.posao.FormattingEnabled = true;
-            this.posao.Location = new System.Drawing.Point(122, 130);
+            this.posao.Location = new System.Drawing.Point(129, 245);
             this.posao.Name = "posao";
             this.posao.Size = new System.Drawing.Size(140, 21);
             this.posao.TabIndex = 18;
@@ -254,19 +257,39 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::WindowsFormsApplication1.Properties.Resources.posao;
-            this.pictureBox1.Location = new System.Drawing.Point(273, 12);
+            this.pictureBox1.Location = new System.Drawing.Point(280, 127);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(285, 181);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 19;
             this.pictureBox1.TabStop = false;
             // 
+            // obavijesti
+            // 
+            this.obavijesti.Controls.Add(this.listBox1);
+            this.obavijesti.Location = new System.Drawing.Point(35, 13);
+            this.obavijesti.Name = "obavijesti";
+            this.obavijesti.Size = new System.Drawing.Size(530, 108);
+            this.obavijesti.TabIndex = 20;
+            this.obavijesti.TabStop = false;
+            this.obavijesti.Text = "Podsjetnik";
+            // 
+            // listBox1
+            // 
+            this.listBox1.FormattingEnabled = true;
+            this.listBox1.HorizontalScrollbar = true;
+            this.listBox1.Location = new System.Drawing.Point(3, 20);
+            this.listBox1.Name = "listBox1";
+            this.listBox1.Size = new System.Drawing.Size(521, 69);
+            this.listBox1.TabIndex = 0;
+            // 
             // PosloviFrm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(601, 428);
+            this.ClientSize = new System.Drawing.Size(744, 543);
+            this.Controls.Add(this.obavijesti);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.posao);
             this.Controls.Add(this.podrum);
@@ -283,14 +306,17 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "PosloviFrm";
             this.Text = "Poslovi";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.Poslovi_Load);
             ((System.ComponentModel.ISupportInitialize)(this.vinogradBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.vinotekaDataSet1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.podrumBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.posloviBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.obavijesti.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -321,5 +347,7 @@
         private System.Windows.Forms.BindingSource posloviBindingSource;
         private VinotekaDataSet1TableAdapters.PosloviTableAdapter posloviTableAdapter;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.GroupBox obavijesti;
+        private System.Windows.Forms.ListBox listBox1;
     }
 }

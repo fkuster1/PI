@@ -40,6 +40,7 @@
             this.vinotekaDataSet1 = new WindowsFormsApplication1.VinotekaDataSet1();
             this.vinoTableAdapter = new WindowsFormsApplication1.VinotekaDataSet1TableAdapters.VinoTableAdapter();
             this.bacva = new System.Windows.Forms.ComboBox();
+            this.bacveBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.bacveBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.bacveTableAdapter = new WindowsFormsApplication1.VinotekaDataSet1TableAdapters.BacveTableAdapter();
             this.label4 = new System.Windows.Forms.Label();
@@ -47,12 +48,10 @@
             this.label7 = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
             this.preostalooo = new System.Windows.Forms.TextBox();
-            this.pomoc = new System.Windows.Forms.Label();
-            this.bacveBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.vinoBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.vinotekaDataSet1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bacveBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bacveBindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bacveBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -146,6 +145,11 @@
             this.bacva.ValueMember = "Id";
             this.bacva.SelectedIndexChanged += new System.EventHandler(this.bacva_SelectedIndexChanged);
             // 
+            // bacveBindingSource1
+            // 
+            this.bacveBindingSource1.DataMember = "Bacve";
+            this.bacveBindingSource1.DataSource = this.vinotekaDataSet1;
+            // 
             // bacveBindingSource
             // 
             this.bacveBindingSource.DataMember = "Bacve";
@@ -203,27 +207,12 @@
             this.preostalooo.Size = new System.Drawing.Size(165, 20);
             this.preostalooo.TabIndex = 17;
             // 
-            // pomoc
-            // 
-            this.pomoc.AutoSize = true;
-            this.pomoc.Location = new System.Drawing.Point(13, 190);
-            this.pomoc.Name = "pomoc";
-            this.pomoc.Size = new System.Drawing.Size(25, 13);
-            this.pomoc.TabIndex = 18;
-            this.pomoc.Text = "nee";
-            // 
-            // bacveBindingSource1
-            // 
-            this.bacveBindingSource1.DataMember = "Bacve";
-            this.bacveBindingSource1.DataSource = this.vinotekaDataSet1;
-            // 
             // VinoUBacvamaFrm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(292, 301);
-            this.Controls.Add(this.pomoc);
             this.Controls.Add(this.preostalooo);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.label7);
@@ -236,13 +225,15 @@
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "VinoUBacvamaFrm";
             this.Text = "VinuUBacvamaFrm";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.VinuUBacvamaFrm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.vinoBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.vinotekaDataSet1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bacveBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bacveBindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bacveBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -267,7 +258,6 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.TextBox preostalooo;
-        private System.Windows.Forms.Label pomoc;
         private System.Windows.Forms.BindingSource bacveBindingSource1;
     }
 }

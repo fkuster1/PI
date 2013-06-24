@@ -30,13 +30,23 @@
         {
             this.components = new System.ComponentModel.Container();
             Microsoft.Reporting.WinForms.ReportDataSource reportDataSource1 = new Microsoft.Reporting.WinForms.ReportDataSource();
-            this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
-            this.VinotekaDataSet1 = new WindowsFormsApplication1.VinotekaDataSet1();
             this.VinoBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.VinotekaDataSet1 = new WindowsFormsApplication1.VinotekaDataSet1();
+            this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
             this.VinoTableAdapter = new WindowsFormsApplication1.VinotekaDataSet1TableAdapters.VinoTableAdapter();
-            ((System.ComponentModel.ISupportInitialize)(this.VinotekaDataSet1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.VinoBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.VinotekaDataSet1)).BeginInit();
             this.SuspendLayout();
+            // 
+            // VinoBindingSource
+            // 
+            this.VinoBindingSource.DataMember = "Vino";
+            this.VinoBindingSource.DataSource = this.VinotekaDataSet1;
+            // 
+            // VinotekaDataSet1
+            // 
+            this.VinotekaDataSet1.DataSetName = "VinotekaDataSet1";
+            this.VinotekaDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // reportViewer1
             // 
@@ -50,16 +60,6 @@
             this.reportViewer1.Size = new System.Drawing.Size(284, 262);
             this.reportViewer1.TabIndex = 0;
             // 
-            // VinotekaDataSet1
-            // 
-            this.VinotekaDataSet1.DataSetName = "VinotekaDataSet1";
-            this.VinotekaDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // VinoBindingSource
-            // 
-            this.VinoBindingSource.DataMember = "Vino";
-            this.VinoBindingSource.DataSource = this.VinotekaDataSet1;
-            // 
             // VinoTableAdapter
             // 
             this.VinoTableAdapter.ClearBeforeFill = true;
@@ -70,11 +70,13 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(284, 262);
             this.Controls.Add(this.reportViewer1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "VinoReport";
             this.Text = "VinoReport";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.VinoReport_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.VinotekaDataSet1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.VinoBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.VinotekaDataSet1)).EndInit();
             this.ResumeLayout(false);
 
         }

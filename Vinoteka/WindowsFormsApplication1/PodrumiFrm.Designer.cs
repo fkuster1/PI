@@ -134,8 +134,10 @@
             this.Controls.Add(this.label4);
             this.Controls.Add(this.brojmjesta);
             this.Controls.Add(this.label1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "PodrumiFrm";
             this.Text = "Podrumi";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

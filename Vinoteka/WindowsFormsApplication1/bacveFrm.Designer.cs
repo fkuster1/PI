@@ -243,8 +243,10 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.proizvodac);
             this.Controls.Add(this.label1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "bacveFrm";
             this.Text = "Bačve";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.bacveFrm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.podrumBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.vinotekaDataSet1)).EndInit();
