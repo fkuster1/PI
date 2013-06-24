@@ -48,5 +48,10 @@ namespace WindowsFormsApplication1
             vino.UnesiVino();
         }
 
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
+
     }
 }

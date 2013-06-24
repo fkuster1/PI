@@ -33,7 +33,11 @@ namespace WindowsFormsApplication1
             butelje.SadrziVino = (int)izbacve.SelectedValue;
             butelje.UnesiPodrum();
             int idVina = (int)Baza.Instance.DohvatiVrijednost("select top 1 Id from Butelje order by Id desc;");
-            label4.Text = idVina.ToString();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Close();
         }
     }
 }

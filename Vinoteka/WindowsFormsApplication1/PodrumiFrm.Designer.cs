@@ -81,7 +81,7 @@
             // button2
             // 
             this.button2.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.button2.Location = new System.Drawing.Point(26, 197);
+            this.button2.Location = new System.Drawing.Point(26, 185);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(271, 46);
             this.button2.TabIndex = 16;
@@ -92,7 +92,7 @@
             // button1
             // 
             this.button1.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.button1.Location = new System.Drawing.Point(26, 136);
+            this.button1.Location = new System.Drawing.Point(26, 118);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(271, 47);
             this.button1.TabIndex = 15;
@@ -104,7 +104,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.label6.Location = new System.Drawing.Point(12, 274);
+            this.label6.Location = new System.Drawing.Point(12, 252);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(228, 13);
             this.label6.TabIndex = 14;
@@ -113,9 +113,9 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::WindowsFormsApplication1.Properties.Resources.podrum;
-            this.pictureBox1.Location = new System.Drawing.Point(318, 80);
+            this.pictureBox1.Location = new System.Drawing.Point(318, 56);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(255, 157);
+            this.pictureBox1.Size = new System.Drawing.Size(255, 161);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 17;
             this.pictureBox1.TabStop = false;
@@ -125,7 +125,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(585, 300);
+            this.ClientSize = new System.Drawing.Size(585, 282);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);

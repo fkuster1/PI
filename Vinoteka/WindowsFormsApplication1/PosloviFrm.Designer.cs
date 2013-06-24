@@ -110,7 +110,7 @@
             this.opis.Location = new System.Drawing.Point(124, 199);
             this.opis.Multiline = true;
             this.opis.Name = "opis";
-            this.opis.Size = new System.Drawing.Size(196, 103);
+            this.opis.Size = new System.Drawing.Size(434, 103);
             this.opis.TabIndex = 7;
             // 
             // label5
@@ -146,9 +146,9 @@
             // button1
             // 
             this.button1.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.button1.Location = new System.Drawing.Point(289, 322);
+            this.button1.Location = new System.Drawing.Point(273, 319);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(131, 36);
+            this.button1.Size = new System.Drawing.Size(285, 35);
             this.button1.TabIndex = 12;
             this.button1.Text = "Spremi";
             this.button1.UseVisualStyleBackColor = false;
@@ -157,9 +157,9 @@
             // button2
             // 
             this.button2.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.button2.Location = new System.Drawing.Point(289, 370);
+            this.button2.Location = new System.Drawing.Point(273, 370);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(131, 37);
+            this.button2.Size = new System.Drawing.Size(285, 35);
             this.button2.TabIndex = 13;
             this.button2.Text = "Zatvori";
             this.button2.UseVisualStyleBackColor = false;
@@ -184,12 +184,13 @@
             // 
             // vinograd
             // 
+            this.vinograd.BackColor = System.Drawing.SystemColors.ControlDark;
             this.vinograd.DataSource = this.vinogradBindingSource;
             this.vinograd.DisplayMember = "Adresa";
             this.vinograd.FormattingEnabled = true;
             this.vinograd.Location = new System.Drawing.Point(122, 28);
             this.vinograd.Name = "vinograd";
-            this.vinograd.Size = new System.Drawing.Size(121, 21);
+            this.vinograd.Size = new System.Drawing.Size(140, 21);
             this.vinograd.TabIndex = 16;
             this.vinograd.ValueMember = "Id";
             this.vinograd.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
@@ -210,12 +211,13 @@
             // 
             // podrum
             // 
+            this.podrum.BackColor = System.Drawing.SystemColors.ControlDark;
             this.podrum.DataSource = this.podrumBindingSource;
             this.podrum.DisplayMember = "Adresa";
             this.podrum.FormattingEnabled = true;
             this.podrum.Location = new System.Drawing.Point(122, 85);
             this.podrum.Name = "podrum";
-            this.podrum.Size = new System.Drawing.Size(121, 21);
+            this.podrum.Size = new System.Drawing.Size(140, 21);
             this.podrum.TabIndex = 17;
             this.podrum.ValueMember = "Id";
             // 
@@ -230,12 +232,13 @@
             // 
             // posao
             // 
+            this.posao.BackColor = System.Drawing.SystemColors.ControlDark;
             this.posao.DataSource = this.posloviBindingSource;
             this.posao.DisplayMember = "Ime";
             this.posao.FormattingEnabled = true;
             this.posao.Location = new System.Drawing.Point(122, 130);
             this.posao.Name = "posao";
-            this.posao.Size = new System.Drawing.Size(121, 21);
+            this.posao.Size = new System.Drawing.Size(140, 21);
             this.posao.TabIndex = 18;
             this.posao.ValueMember = "Id";
             // 
@@ -251,7 +254,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::WindowsFormsApplication1.Properties.Resources.posao;
-            this.pictureBox1.Location = new System.Drawing.Point(304, 12);
+            this.pictureBox1.Location = new System.Drawing.Point(273, 12);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(285, 181);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;

@@ -82,6 +82,7 @@
             this.dataGridViewTextBoxColumn16 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn17 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn18 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Vrsta = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.vinoBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.label11 = new System.Windows.Forms.Label();
             this.button4 = new System.Windows.Forms.Button();
@@ -96,7 +97,6 @@
             this.poslovikraj = new System.Windows.Forms.DateTimePicker();
             this.slikabacve = new System.Windows.Forms.PictureBox();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
-            this.Vrsta = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.obavljeniposloviBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.vinotekaDataSet1)).BeginInit();
@@ -520,7 +520,7 @@
             this.dataGridViewTextBoxColumn18,
             this.Vrsta});
             this.dataGridView5.DataSource = this.vinoBindingSource;
-            this.dataGridView5.Location = new System.Drawing.Point(413, 385);
+            this.dataGridView5.Location = new System.Drawing.Point(389, 385);
             this.dataGridView5.Name = "dataGridView5";
             this.dataGridView5.Size = new System.Drawing.Size(435, 150);
             this.dataGridView5.TabIndex = 28;
@@ -562,6 +562,13 @@
             this.dataGridViewTextBoxColumn18.DataPropertyName = "Alkohol";
             this.dataGridViewTextBoxColumn18.HeaderText = "Alkohol";
             this.dataGridViewTextBoxColumn18.Name = "dataGridViewTextBoxColumn18";
+            // 
+            // Vrsta
+            // 
+            this.Vrsta.DataPropertyName = "Id";
+            this.Vrsta.HeaderText = "Vrsta";
+            this.Vrsta.Name = "Vrsta";
+            this.Vrsta.ReadOnly = true;
             // 
             // vinoBindingSource
             // 
@@ -647,13 +654,6 @@
             this.slikabacve.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.slikabacve.TabIndex = 37;
             this.slikabacve.TabStop = false;
-            // 
-            // Vrsta
-            // 
-            this.Vrsta.DataPropertyName = "Id";
-            this.Vrsta.HeaderText = "Vrsta";
-            this.Vrsta.Name = "Vrsta";
-            this.Vrsta.ReadOnly = true;
             // 
             // pretraga_i_pregled_statistikeFrm
             // 

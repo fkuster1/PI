@@ -31,5 +31,10 @@ namespace WindowsFormsApplication1
         {
             Baza.Instance.IzvrsiUpit("insert into Poslovi (Ime) values('" + txtPosao.Text + "');");
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
     }
 }

@@ -78,8 +78,13 @@ namespace WindowsFormsApplication1
                 }
                 else iskoristeno = 0;
                 double preostalo = ukupno - iskoristeno;
-                preostalotxt.Text = "Preostalo: " + preostalo.ToString();
+                preostalooo.Text = preostalo.ToString();
             }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Close();
         }
     }
 }

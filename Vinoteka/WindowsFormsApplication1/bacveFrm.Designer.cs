@@ -160,6 +160,7 @@
             // 
             // podrum
             // 
+            this.podrum.BackColor = System.Drawing.SystemColors.ControlDark;
             this.podrum.DataSource = this.podrumBindingSource;
             this.podrum.DisplayMember = "Adresa";
             this.podrum.FormattingEnabled = true;
@@ -181,6 +182,7 @@
             // 
             // vrsta
             // 
+            this.vrsta.BackColor = System.Drawing.SystemColors.ControlDark;
             this.vrsta.DataSource = this.vrstabacviBindingSource;
             this.vrsta.DisplayMember = "Vrsta";
             this.vrsta.FormattingEnabled = true;
@@ -197,6 +199,7 @@
             // 
             // datum
             // 
+            this.datum.CalendarMonthBackground = System.Drawing.SystemColors.ControlDark;
             this.datum.Location = new System.Drawing.Point(127, 205);
             this.datum.Name = "datum";
             this.datum.Size = new System.Drawing.Size(176, 20);

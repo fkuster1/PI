@@ -35,5 +35,10 @@ namespace WindowsFormsApplication1
             vinova.Sorta = Convert.ToInt32(sorte.SelectedValue);
             vinova.UnesiLozu();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
     }
 }
