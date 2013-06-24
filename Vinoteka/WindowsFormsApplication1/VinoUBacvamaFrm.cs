@@ -57,7 +57,7 @@ namespace WindowsFormsApplication1
                         vinob.AzurirajVinoUBacvi();
                     }
                     preostalo -= vinob.BrojLitara;
-                    preostalotxt.Text = "Preostalo: " + preostalo.ToString();
+                    preostalooo.Text = preostalo.ToString();
                 }
                 else MessageBox.Show("Ne može stati toliku vina u tu bačvu!");
             }
@@ -65,12 +65,14 @@ namespace WindowsFormsApplication1
 
         private void bacva_SelectedIndexChanged(object sender, EventArgs e)
         {
-            int idbacva = Convert.ToInt32(bacva.Text);
+            
+            int idbacva = Convert.ToInt32(bacva.SelectedValue);
+            pomoc.Text = idbacva.ToString();
             object pom1 = Baza.Instance.DohvatiVrijednost("select Zapremnina from Bacve where Id=" + idbacva + ";");
             object pom = Baza.Instance.DohvatiVrijednost("select sum(BrojLitara) from Vino_u_bacvi where Id_bacve=" + idbacva + ";");
             if (DBNull.Value != pom1)
             {
-                int ukupno = (int)pom1;
+                int ukupno = Convert.ToInt32(pom1);
                 double iskoristeno;
                 if (DBNull.Value != pom)
                 {
@@ -84,7 +86,7 @@ namespace WindowsFormsApplication1
 
         private void button2_Click(object sender, EventArgs e)
         {
-            Close();
+            this.Close();
         }
     }
 }

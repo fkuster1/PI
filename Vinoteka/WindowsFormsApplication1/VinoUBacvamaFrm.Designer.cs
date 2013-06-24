@@ -47,9 +47,12 @@
             this.label7 = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
             this.preostalooo = new System.Windows.Forms.TextBox();
+            this.pomoc = new System.Windows.Forms.Label();
+            this.bacveBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.vinoBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.vinotekaDataSet1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bacveBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bacveBindingSource1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -133,7 +136,7 @@
             // bacva
             // 
             this.bacva.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.bacva.DataSource = this.bacveBindingSource;
+            this.bacva.DataSource = this.bacveBindingSource1;
             this.bacva.DisplayMember = "Id";
             this.bacva.FormattingEnabled = true;
             this.bacva.Location = new System.Drawing.Point(94, 21);
@@ -200,12 +203,27 @@
             this.preostalooo.Size = new System.Drawing.Size(165, 20);
             this.preostalooo.TabIndex = 17;
             // 
+            // pomoc
+            // 
+            this.pomoc.AutoSize = true;
+            this.pomoc.Location = new System.Drawing.Point(13, 190);
+            this.pomoc.Name = "pomoc";
+            this.pomoc.Size = new System.Drawing.Size(25, 13);
+            this.pomoc.TabIndex = 18;
+            this.pomoc.Text = "nee";
+            // 
+            // bacveBindingSource1
+            // 
+            this.bacveBindingSource1.DataMember = "Bacve";
+            this.bacveBindingSource1.DataSource = this.vinotekaDataSet1;
+            // 
             // VinoUBacvamaFrm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(292, 301);
+            this.Controls.Add(this.pomoc);
             this.Controls.Add(this.preostalooo);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.label7);
@@ -224,6 +242,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.vinoBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.vinotekaDataSet1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bacveBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bacveBindingSource1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -248,5 +267,7 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.TextBox preostalooo;
+        private System.Windows.Forms.Label pomoc;
+        private System.Windows.Forms.BindingSource bacveBindingSource1;
     }
 }
