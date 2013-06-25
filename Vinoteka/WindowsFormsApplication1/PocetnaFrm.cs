@@ -191,6 +191,112 @@ namespace WindowsFormsApplication1
             loading2.Start();
         }
 
+
+        private void button20_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button19_Click(object sender, EventArgs e)
+        {
+            var forma11 = new ModifikacijaVinaFrm();
+            Thread loading = new Thread(new ThreadStart(dretvaLoading));
+            loading.Start();
+            forma11.Show();
+            forma11.TopMost = true;
+            Thread loading2 = new Thread(new ThreadStart(dretvaLoading2));
+            loading2.Start();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            var forma12 = new ModifikacijaVinogradaFrm();
+            Thread loading = new Thread(new ThreadStart(dretvaLoading));
+            loading.Start();
+            forma12.Show();
+            forma12.TopMost = true;
+            Thread loading2 = new Thread(new ThreadStart(dretvaLoading2));
+            loading2.Start();
+        }
+
+        private void button18_Click(object sender, EventArgs e)
+        {
+            var forma13 = new ModifikacijaVinoveLozeFrm();
+            Thread loading = new Thread(new ThreadStart(dretvaLoading));
+            loading.Start();
+            forma13.Show();
+            forma13.TopMost = true;
+            Thread loading2 = new Thread(new ThreadStart(dretvaLoading2));
+            loading2.Start();
+        }
+
+        private void button22_Click(object sender, EventArgs e)
+        {
+            var forma14 = new ModifikacijaBacviFrm();
+            Thread loading = new Thread(new ThreadStart(dretvaLoading));
+            loading.Start();
+            forma14.Show();
+            forma14.TopMost = true;
+            Thread loading2 = new Thread(new ThreadStart(dretvaLoading2));
+            loading2.Start();
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            var forma15 = new ModifikacijaPodrumaFrm();
+            Thread loading = new Thread(new ThreadStart(dretvaLoading));
+            loading.Start();
+            forma15.Show();
+            forma15.TopMost = true;
+            Thread loading2 = new Thread(new ThreadStart(dretvaLoading2));
+            loading2.Start();
+
+        }
+
+        private void button21_Click(object sender, EventArgs e)
+        {
+            var forma16 = new ModifikacijaOstalihUnosaFrm();
+            Thread loading = new Thread(new ThreadStart(dretvaLoading));
+            loading.Start();
+            forma16.Show();
+            forma16.TopMost = true;
+            Thread loading2 = new Thread(new ThreadStart(dretvaLoading2));
+            loading2.Start();
+        }
+
+        private void button16_Click(object sender, EventArgs e)
+        {
+            var forma17 = new ModifikacijaPoslovaFrm();
+            Thread loading = new Thread(new ThreadStart(dretvaLoading));
+            loading.Start();
+            forma17.Show();
+            forma17.TopMost = true;
+            Thread loading2 = new Thread(new ThreadStart(dretvaLoading2));
+            loading2.Start();
+        }
+
+        private void button20_Click_1(object sender, EventArgs e)
+        {
+            var forma18 = new ModifikacijaButeljaFrm();
+            Thread loading = new Thread(new ThreadStart(dretvaLoading));
+            loading.Start();
+            forma18.Show();
+            forma18.TopMost = true;
+            Thread loading2 = new Thread(new ThreadStart(dretvaLoading2));
+            loading2.Start();
+        }
+
+        private void button17_Click(object sender, EventArgs e)
+        {
+            var forma19 = new ModifikacijaVinaUBacvamaFrm();
+            Thread loading = new Thread(new ThreadStart(dretvaLoading));
+            loading.Start();
+            forma19.Show();
+            forma19.TopMost = true;
+            Thread loading2 = new Thread(new ThreadStart(dretvaLoading2));
+            loading2.Start();
+        }
+
         //dretvene metode
         public void dretvaLoading()
         {
@@ -202,13 +308,6 @@ namespace WindowsFormsApplication1
         {
             loadanje.Close();
         }
-
-        private void button20_Click(object sender, EventArgs e)
-        {
-
-        }
-
-
 
     }
 }
