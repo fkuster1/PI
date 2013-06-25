@@ -24,7 +24,7 @@
     <UpdatePeriodically>false</UpdatePeriodically>
     <UpdateRequired>false</UpdateRequired>
     <MapFileExtensions>true</MapFileExtensions>
-    <ApplicationRevision>13</ApplicationRevision>
+    <ApplicationRevision>15</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <PublishWizardCompleted>true</PublishWizardCompleted>
@@ -98,35 +98,17 @@
     <Compile Include="LoadFrm.Designer.cs">
       <DependentUpon>LoadFrm.cs</DependentUpon>
     </Compile>
-    <Compile Include="ModifikacijaBacviFrm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ModifikacijaBacviFrm.Designer.cs">
-      <DependentUpon>ModifikacijaBacviFrm.cs</DependentUpon>
-    </Compile>
     <Compile Include="ModifikacijaButeljaFrm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="ModifikacijaButeljaFrm.Designer.cs">
       <DependentUpon>ModifikacijaButeljaFrm.cs</DependentUpon>
     </Compile>
-    <Compile Include="ModifikacijaOstalihUnosaFrm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ModifikacijaOstalihUnosaFrm.Designer.cs">
-      <DependentUpon>ModifikacijaOstalihUnosaFrm.cs</DependentUpon>
-    </Compile>
     <Compile Include="ModifikacijaPodrumaFrm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="ModifikacijaPodrumaFrm.Designer.cs">
       <DependentUpon>ModifikacijaPodrumaFrm.cs</DependentUpon>
-    </Compile>
-    <Compile Include="ModifikacijaPoslovaFrm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ModifikacijaPoslovaFrm.Designer.cs">
-      <DependentUpon>ModifikacijaPoslovaFrm.cs</DependentUpon>
     </Compile>
     <Compile Include="ModifikacijaVinaFrm.cs">
       <SubType>Form</SubType>
@@ -139,12 +121,6 @@
     </Compile>
     <Compile Include="ModifikacijaVinaUBacvamaFrm.Designer.cs">
       <DependentUpon>ModifikacijaVinaUBacvamaFrm.cs</DependentUpon>
-    </Compile>
-    <Compile Include="ModifikacijaVinogradaFrm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ModifikacijaVinogradaFrm.Designer.cs">
-      <DependentUpon>ModifikacijaVinogradaFrm.cs</DependentUpon>
     </Compile>
     <Compile Include="ModifikacijaVinoveLozeFrm.cs">
       <SubType>Form</SubType>
@@ -242,6 +218,10 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>VinotekaDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="VinotekaDataSet1.cs">
+      <DependentUpon>VinotekaDataSet1.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="VinotekaDataSet1.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -269,29 +249,17 @@
     <EmbeddedResource Include="LoadFrm.resx">
       <DependentUpon>LoadFrm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ModifikacijaBacviFrm.resx">
-      <DependentUpon>ModifikacijaBacviFrm.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="ModifikacijaButeljaFrm.resx">
       <DependentUpon>ModifikacijaButeljaFrm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ModifikacijaOstalihUnosaFrm.resx">
-      <DependentUpon>ModifikacijaOstalihUnosaFrm.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="ModifikacijaPodrumaFrm.resx">
       <DependentUpon>ModifikacijaPodrumaFrm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="ModifikacijaPoslovaFrm.resx">
-      <DependentUpon>ModifikacijaPoslovaFrm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ModifikacijaVinaFrm.resx">
       <DependentUpon>ModifikacijaVinaFrm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ModifikacijaVinaUBacvamaFrm.resx">
       <DependentUpon>ModifikacijaVinaUBacvamaFrm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="ModifikacijaVinogradaFrm.resx">
-      <DependentUpon>ModifikacijaVinogradaFrm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ModifikacijaVinoveLozeFrm.resx">
       <DependentUpon>ModifikacijaVinoveLozeFrm.cs</DependentUpon>

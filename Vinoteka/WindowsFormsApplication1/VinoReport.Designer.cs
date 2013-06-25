@@ -34,6 +34,7 @@
             this.VinotekaDataSet1 = new WindowsFormsApplication1.VinotekaDataSet1();
             this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
             this.VinoTableAdapter = new WindowsFormsApplication1.VinotekaDataSet1TableAdapters.VinoTableAdapter();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.VinoBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.VinotekaDataSet1)).BeginInit();
             this.SuspendLayout();
@@ -57,18 +58,30 @@
             this.reportViewer1.LocalReport.ReportEmbeddedResource = "WindowsFormsApplication1.Report3.rdlc";
             this.reportViewer1.Location = new System.Drawing.Point(0, 0);
             this.reportViewer1.Name = "reportViewer1";
-            this.reportViewer1.Size = new System.Drawing.Size(284, 262);
+            this.reportViewer1.Size = new System.Drawing.Size(1366, 768);
             this.reportViewer1.TabIndex = 0;
             // 
             // VinoTableAdapter
             // 
             this.VinoTableAdapter.ClearBeforeFill = true;
             // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.button1.Location = new System.Drawing.Point(842, 44);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(271, 47);
+            this.button1.TabIndex = 16;
+            this.button1.Text = "Izlaz";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // VinoReport
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(284, 262);
+            this.ClientSize = new System.Drawing.Size(1366, 768);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.reportViewer1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "VinoReport";
@@ -87,5 +100,6 @@
         private System.Windows.Forms.BindingSource VinoBindingSource;
         private VinotekaDataSet1 VinotekaDataSet1;
         private VinotekaDataSet1TableAdapters.VinoTableAdapter VinoTableAdapter;
+        private System.Windows.Forms.Button button1;
     }
 }

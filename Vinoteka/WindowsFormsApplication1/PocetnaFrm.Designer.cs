@@ -46,15 +46,11 @@
             this.button15 = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button16 = new System.Windows.Forms.Button();
-            this.button21 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
             this.button20 = new System.Windows.Forms.Button();
             this.button19 = new System.Windows.Forms.Button();
             this.button18 = new System.Windows.Forms.Button();
             this.button17 = new System.Windows.Forms.Button();
-            this.button22 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -250,10 +246,6 @@
             // groupBox2
             // 
             this.groupBox2.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.groupBox2.Controls.Add(this.button22);
-            this.groupBox2.Controls.Add(this.button3);
-            this.groupBox2.Controls.Add(this.button16);
-            this.groupBox2.Controls.Add(this.button21);
             this.groupBox2.Controls.Add(this.button6);
             this.groupBox2.Controls.Add(this.button20);
             this.groupBox2.Controls.Add(this.button19);
@@ -261,48 +253,15 @@
             this.groupBox2.Controls.Add(this.button17);
             this.groupBox2.Location = new System.Drawing.Point(1005, 208);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(335, 443);
+            this.groupBox2.Size = new System.Drawing.Size(335, 242);
             this.groupBox2.TabIndex = 31;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Modifikacije";
             // 
-            // button3
-            // 
-            this.button3.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.button3.Location = new System.Drawing.Point(14, 23);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(146, 53);
-            this.button3.TabIndex = 18;
-            this.button3.Text = "Vinograd";
-            this.button3.UseVisualStyleBackColor = false;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
-            // 
-            // button16
-            // 
-            this.button16.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.button16.Location = new System.Drawing.Point(13, 201);
-            this.button16.Name = "button16";
-            this.button16.Size = new System.Drawing.Size(147, 53);
-            this.button16.TabIndex = 19;
-            this.button16.Text = "Poslovi";
-            this.button16.UseVisualStyleBackColor = false;
-            this.button16.Click += new System.EventHandler(this.button16_Click);
-            // 
-            // button21
-            // 
-            this.button21.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.button21.Location = new System.Drawing.Point(174, 112);
-            this.button21.Name = "button21";
-            this.button21.Size = new System.Drawing.Size(146, 53);
-            this.button21.TabIndex = 25;
-            this.button21.Text = "Ostali unosi";
-            this.button21.UseVisualStyleBackColor = false;
-            this.button21.Click += new System.EventHandler(this.button21_Click);
-            // 
             // button6
             // 
             this.button6.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.button6.Location = new System.Drawing.Point(13, 112);
+            this.button6.Location = new System.Drawing.Point(6, 25);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(147, 53);
             this.button6.TabIndex = 20;
@@ -313,7 +272,7 @@
             // button20
             // 
             this.button20.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.button20.Location = new System.Drawing.Point(174, 201);
+            this.button20.Location = new System.Drawing.Point(174, 97);
             this.button20.Name = "button20";
             this.button20.Size = new System.Drawing.Size(146, 53);
             this.button20.TabIndex = 21;
@@ -324,7 +283,7 @@
             // button19
             // 
             this.button19.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.button19.Location = new System.Drawing.Point(174, 303);
+            this.button19.Location = new System.Drawing.Point(91, 179);
             this.button19.Name = "button19";
             this.button19.Size = new System.Drawing.Size(146, 53);
             this.button19.TabIndex = 22;
@@ -347,24 +306,13 @@
             // 
             this.button17.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.button17.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.button17.Location = new System.Drawing.Point(13, 303);
+            this.button17.Location = new System.Drawing.Point(7, 97);
             this.button17.Name = "button17";
             this.button17.Size = new System.Drawing.Size(146, 53);
             this.button17.TabIndex = 24;
             this.button17.Text = "Vino u bačvama";
             this.button17.UseVisualStyleBackColor = false;
             this.button17.Click += new System.EventHandler(this.button17_Click);
-            // 
-            // button22
-            // 
-            this.button22.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.button22.Location = new System.Drawing.Point(97, 374);
-            this.button22.Name = "button22";
-            this.button22.Size = new System.Drawing.Size(147, 53);
-            this.button22.TabIndex = 26;
-            this.button22.Text = "Bačve";
-            this.button22.UseVisualStyleBackColor = false;
-            this.button22.Click += new System.EventHandler(this.button22_Click);
             // 
             // PocetnaFrm
             // 
@@ -378,7 +326,6 @@
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.groupBox1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MaximizeBox = false;
             this.Name = "PocetnaFrm";
             this.Text = "Vinoteka";
@@ -410,15 +357,11 @@
         private System.Windows.Forms.Button button15;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button16;
-        private System.Windows.Forms.Button button21;
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Button button20;
         private System.Windows.Forms.Button button19;
         private System.Windows.Forms.Button button18;
         private System.Windows.Forms.Button button17;
-        private System.Windows.Forms.Button button22;
 
     }
 }
