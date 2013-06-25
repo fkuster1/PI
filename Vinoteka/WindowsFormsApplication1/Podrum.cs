@@ -12,14 +12,15 @@ namespace WindowsFormsApplication1
             get;
             set;
         }
+        int brojMjesta;
         public int BrojMjesta
         {
             get { return BrojMjesta; }
-            set { BrojMjesta = Math.Abs(value); }
+            set { brojMjesta = Math.Abs(value); }
         }
         public void UnesiPodrum()
         {
-            Baza.Instance.IzvrsiUpit("insert into Podrum (Adresa, Broj_mjesta) values('" + Adresa + "', " + BrojMjesta + ");");
+            Baza.Instance.IzvrsiUpit("insert into Podrum (Adresa, Broj_mjesta) values('" + Adresa + "', " + brojMjesta + ");");
         }
     }
 }
