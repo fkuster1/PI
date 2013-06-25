@@ -13,16 +13,19 @@ namespace WindowsFormsApplication1
     public partial class UnosVinaFrm : Form
     {
         Vino vino;
+        List<int> idovi = new List<int>();
         public UnosVinaFrm()
         {
             InitializeComponent();
             this.CenterToScreen();
             vino = new Vino();
-            SqlDataReader reader = Baza.Instance.DohvatiDataReader("select Vinova_loza.Id,Sorta.Naziv, Vinograd.Adresa from Vinova_loza, Sorta, Vinograd where Sorta.Id=Vinova_loza.Sorta and Vinova_loza.Vinograd=Vinograd.Id;");
+            SqlDataReader reader = Baza.Instance.DohvatiDataReader("select Vinova_loza.Id,'Sorta: '+rtrim(Sorta.Naziv)+', Vinograd:'+ Vinograd.Adresa from Vinova_loza, Sorta, Vinograd where Sorta.Id=Vinova_loza.Sorta and Vinova_loza.Vinograd=Vinograd.Id;");
             while (reader.Read())
             {
-                loze.Items.Add(reader[0]);
+                loze.Items.Add(reader[1]);
+                idovi.Add(Convert.ToInt32(reader[0]));
             }
+            reader.Close();
         }
 
         private void UnosVinaFrm_Load(object sender, EventArgs e)
@@ -41,9 +44,9 @@ namespace WindowsFormsApplication1
             vino.Kolicina = Convert.ToInt32(brlitara.Text);
             vino.Alkohol = float.Parse(alkohol.Text);
             vino.VrstaVina = Convert.ToInt32(vrstavina.SelectedValue);
-            foreach (int a in loze.CheckedItems)
+            for (int i = 0; i < loze.Items.Count; i++)
             {
-                vino.DodajLozu(a);
+                if (loze.CheckedItems.Contains(loze.Items[i])) vino.DodajLozu(idovi[i]);
             }
             vino.UnesiVino();
         }

@@ -171,7 +171,7 @@
             // 
             this.button10.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.button10.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.button10.Location = new System.Drawing.Point(1106, 636);
+            this.button10.Location = new System.Drawing.Point(1106, 618);
             this.button10.Name = "button10";
             this.button10.Size = new System.Drawing.Size(146, 53);
             this.button10.TabIndex = 11;
@@ -226,7 +226,7 @@
             // 
             this.button14.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.button14.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.button14.Location = new System.Drawing.Point(530, 681);
+            this.button14.Location = new System.Drawing.Point(530, 663);
             this.button14.Name = "button14";
             this.button14.Size = new System.Drawing.Size(360, 53);
             this.button14.TabIndex = 16;
@@ -251,7 +251,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(1366, 768);
+            this.ClientSize = new System.Drawing.Size(1366, 750);
             this.Controls.Add(this.button15);
             this.Controls.Add(this.button14);
             this.Controls.Add(this.button13);

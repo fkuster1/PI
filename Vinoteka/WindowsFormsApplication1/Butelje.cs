@@ -7,15 +7,17 @@ namespace WindowsFormsApplication1
 {
     class Butelje
     {
+        int brojButelji;
         public int BrojButelji
         {
             get{ return BrojButelji; }
-            set{ BrojButelji = Math.Abs(value); }
+            set{ brojButelji = Math.Abs(value); }
         }
+        float zapremnina;
         public float Zapremnina
         {
             get{ return Zapremnina; }
-            set{ Zapremnina = Math.Abs(value); }
+            set{ zapremnina = Math.Abs(value); }
         }
         public int SadrziVino
         {
@@ -24,7 +26,7 @@ namespace WindowsFormsApplication1
         }
         public void UnesiPodrum()
         {
-            Baza.Instance.IzvrsiUpit("insert into Butelje (Vino_iz_bacve, BrojButelja, Zapremnina_butelje) values(" + SadrziVino + ", " + BrojButelji + ", " + Zapremnina + ");");
+            Baza.Instance.IzvrsiUpit("insert into Butelje (Vino_iz_bacve, BrojButelja, Zapremnina_butelje) values(" + SadrziVino + ", "+brojButelji+", " + zapremnina + ");");
         }
     }
 }

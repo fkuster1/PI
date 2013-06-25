@@ -39,12 +39,12 @@
             this.bacveTableAdapter = new WindowsFormsApplication1.VinotekaDataSet1TableAdapters.BacveTableAdapter();
             this.brojbutelja = new System.Windows.Forms.TextBox();
             this.zapremnina = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label7 = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.button3 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.bacveBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.vinotekaDataSet1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -88,14 +88,11 @@
             // izbacve
             // 
             this.izbacve.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.izbacve.DataSource = this.bacveBindingSource;
-            this.izbacve.DisplayMember = "Id";
             this.izbacve.FormattingEnabled = true;
             this.izbacve.Location = new System.Drawing.Point(546, 176);
             this.izbacve.Name = "izbacve";
             this.izbacve.Size = new System.Drawing.Size(271, 21);
             this.izbacve.TabIndex = 3;
-            this.izbacve.ValueMember = "Id";
             // 
             // bacveBindingSource
             // 
@@ -126,17 +123,6 @@
             this.zapremnina.Name = "zapremnina";
             this.zapremnina.Size = new System.Drawing.Size(271, 20);
             this.zapremnina.TabIndex = 5;
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.button1.Location = new System.Drawing.Point(440, 413);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(377, 73);
-            this.button1.TabIndex = 6;
-            this.button1.Text = "Spremi";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // pictureBox1
             // 
@@ -189,18 +175,29 @@
             this.pictureBox3.TabIndex = 18;
             this.pictureBox3.TabStop = false;
             // 
+            // button3
+            // 
+            this.button3.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.button3.Location = new System.Drawing.Point(440, 420);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(377, 73);
+            this.button3.TabIndex = 19;
+            this.button3.Text = "Spremi";
+            this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
             // UnosButeljaFrm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(1366, 768);
+            this.ClientSize = new System.Drawing.Size(1366, 750);
+            this.Controls.Add(this.button3);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.button1);
             this.Controls.Add(this.zapremnina);
             this.Controls.Add(this.brojbutelja);
             this.Controls.Add(this.izbacve);
@@ -232,11 +229,11 @@
         private VinotekaDataSet1TableAdapters.BacveTableAdapter bacveTableAdapter;
         private System.Windows.Forms.TextBox brojbutelja;
         private System.Windows.Forms.TextBox zapremnina;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.Button button3;
     }
 }

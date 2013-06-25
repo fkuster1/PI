@@ -9307,7 +9307,7 @@ SELECT Id, Godina_proizvodnje, BrojLitara, Vrsta, Kiselina, Alkohol FROM Vino WH
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private void InitCommandCollection() {
-            this._commandCollection = new global::System.Data.SqlClient.SqlCommand[2];
+            this._commandCollection = new global::System.Data.SqlClient.SqlCommand[3];
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
             this._commandCollection[0].CommandText = "SELECT Id, Godina_proizvodnje, BrojLitara, Vrsta, Kiselina, Alkohol FROM dbo.Vino" +
@@ -9315,11 +9315,17 @@ SELECT Id, Godina_proizvodnje, BrojLitara, Vrsta, Kiselina, Alkohol FROM Vino WH
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
             this._commandCollection[1] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[1].Connection = this.Connection;
-            this._commandCollection[1].CommandText = "SELECT * FROM dbo.Vino where Godina_proizvodnje>=@pocetna and Godina_proizvodnje<" +
-                "=@zavrsna;";
+            this._commandCollection[1].CommandText = "SELECT        Vino.Id, Vino.Godina_proizvodnje, Vino.BrojLitara, Vino.Vrsta, Vino" +
+                ".Kiselina, Vino.Alkohol\r\nFROM            Vino INNER JOIN\r\n                      " +
+                "   Vrsta_vina ON Vino.Vrsta = Vrsta_vina.Id";
             this._commandCollection[1].CommandType = global::System.Data.CommandType.Text;
-            this._commandCollection[1].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@pocetna", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 0, 0, "Godina_proizvodnje", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._commandCollection[1].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@zavrsna", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 0, 0, "Godina_proizvodnje", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[2] = new global::System.Data.SqlClient.SqlCommand();
+            this._commandCollection[2].Connection = this.Connection;
+            this._commandCollection[2].CommandText = "SELECT * FROM dbo.Vino where Godina_proizvodnje>=@pocetna and Godina_proizvodnje<" +
+                "=@zavrsna;";
+            this._commandCollection[2].CommandType = global::System.Data.CommandType.Text;
+            this._commandCollection[2].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@pocetna", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 0, 0, "Godina_proizvodnje", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[2].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@zavrsna", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 0, 0, "Godina_proizvodnje", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -9350,8 +9356,21 @@ SELECT Id, Godina_proizvodnje, BrojLitara, Vrsta, Kiselina, Alkohol FROM Vino WH
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, false)]
-        public virtual int PopuniVinaPoGodinama(VinotekaDataSet1.VinoDataTable dataTable, global::System.Nullable<int> pocetna, global::System.Nullable<int> zavrsna) {
+        public virtual int FillBy(VinotekaDataSet1.VinoDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[1];
+            if ((this.ClearBeforeFill == true)) {
+                dataTable.Clear();
+            }
+            int returnValue = this.Adapter.Fill(dataTable);
+            return returnValue;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, false)]
+        public virtual int PopuniVinaPoGodinama(VinotekaDataSet1.VinoDataTable dataTable, global::System.Nullable<int> pocetna, global::System.Nullable<int> zavrsna) {
+            this.Adapter.SelectCommand = this.CommandCollection[2];
             if ((pocetna.HasValue == true)) {
                 this.Adapter.SelectCommand.Parameters[0].Value = ((int)(pocetna.Value));
             }

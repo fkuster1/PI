@@ -38,11 +38,12 @@ namespace WindowsFormsApplication1
 
         private void button2_Click(object sender, EventArgs e)
         {
-            var forma5 = new PodrumiFrm();
+            var forma4 = new PodrumiFrm();
             Thread loading = new Thread(new ThreadStart(dretvaLoading));
             loading.Start();
-            forma5.Show();
-            forma5.TopMost = true;
+            forma4.Show();
+            forma4.TopMost = true;
+            this.TopMost = false;
             Thread loading2 = new Thread(new ThreadStart(dretvaLoading2));
             loading2.Start(); 
         }

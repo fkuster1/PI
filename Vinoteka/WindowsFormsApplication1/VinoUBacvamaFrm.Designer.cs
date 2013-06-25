@@ -50,12 +50,16 @@
             this.preostalooo = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.vinotekaDataSet1BindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.vinotekaDataSet1BindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.vinoBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.vinotekaDataSet1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bacveBindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bacveBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.vinotekaDataSet1BindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.vinotekaDataSet1BindingSource1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -113,14 +117,11 @@
             // vino
             // 
             this.vino.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.vino.DataSource = this.vinoBindingSource;
-            this.vino.DisplayMember = "Id";
             this.vino.FormattingEnabled = true;
             this.vino.Location = new System.Drawing.Point(484, 321);
             this.vino.Name = "vino";
             this.vino.Size = new System.Drawing.Size(277, 21);
             this.vino.TabIndex = 5;
-            this.vino.ValueMember = "Id";
             // 
             // vinoBindingSource
             // 
@@ -139,14 +140,11 @@
             // bacva
             // 
             this.bacva.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.bacva.DataSource = this.bacveBindingSource1;
-            this.bacva.DisplayMember = "Id";
             this.bacva.FormattingEnabled = true;
             this.bacva.Location = new System.Drawing.Point(484, 285);
             this.bacva.Name = "bacva";
             this.bacva.Size = new System.Drawing.Size(277, 21);
             this.bacva.TabIndex = 6;
-            this.bacva.ValueMember = "Id";
             this.bacva.SelectedIndexChanged += new System.EventHandler(this.bacva_SelectedIndexChanged);
             // 
             // bacveBindingSource1
@@ -232,6 +230,16 @@
             this.pictureBox2.TabIndex = 19;
             this.pictureBox2.TabStop = false;
             // 
+            // vinotekaDataSet1BindingSource
+            // 
+            this.vinotekaDataSet1BindingSource.DataSource = this.vinotekaDataSet1;
+            this.vinotekaDataSet1BindingSource.Position = 0;
+            // 
+            // vinotekaDataSet1BindingSource1
+            // 
+            this.vinotekaDataSet1BindingSource1.DataSource = this.vinotekaDataSet1;
+            this.vinotekaDataSet1BindingSource1.Position = 0;
+            // 
             // VinoUBacvamaFrm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -262,6 +270,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.bacveBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.vinotekaDataSet1BindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.vinotekaDataSet1BindingSource1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -289,5 +299,7 @@
         private System.Windows.Forms.BindingSource bacveBindingSource1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.BindingSource vinotekaDataSet1BindingSource;
+        private System.Windows.Forms.BindingSource vinotekaDataSet1BindingSource1;
     }
 }
