@@ -17,14 +17,15 @@ namespace WindowsFormsApplication1
             get;
             set;
         }
+        int brojCokota;
         public int BrojCokota
         {
             get { return BrojCokota; }
-            set { BrojCokota = Math.Abs(value); }
+            set { brojCokota = Math.Abs(value); }
         }
         public void UnesiVinograd()
         {
-            Baza.Instance.IzvrsiUpit("insert into Vinograd (Adresa, Broj_cokota, Vrijeme_sadnje) values('" + Adresa + "', " + BrojCokota + ", '" + DatumSadnje + "');");
+            Baza.Instance.IzvrsiUpit("insert into Vinograd (Adresa, Broj_cokota, Vrijeme_sadnje) values('" + Adresa + "', " + brojCokota + ", '" + DatumSadnje + "');");
         }
     }
 }

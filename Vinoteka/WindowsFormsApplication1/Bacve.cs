@@ -13,10 +13,11 @@ namespace WindowsFormsApplication1
             get;
             set;
         }
+        int zapremnina;
         public int Zapremnina
         {
             get { return Zapremnina; }
-            set {Zapremnina=Math.Abs(value);}
+            set {zapremnina=Math.Abs(value);}
         }
         public int Vrsta
         {
@@ -35,7 +36,7 @@ namespace WindowsFormsApplication1
         }
         public void UnesiBacvu()
         {
-            Baza.Instance.IzvrsiUpit("insert into Bacve (Proizvodac, Zapremnina, Vrsta, Podrum, DatumKupnje) values('" + Proizvodac + "', " + Zapremnina + ", " + Vrsta + ", " + Podrum + ", '" + DatumKupnje + "');");
+            Baza.Instance.IzvrsiUpit("insert into Bacve (Proizvodac, Zapremnina, Vrsta, Podrum, DatumKupnje) values('" + Proizvodac + "', " + zapremnina + ", " + Vrsta + ", " + Podrum + ", '" + DatumKupnje + "');");
         }
     }
 }
