@@ -48,6 +48,7 @@ namespace WindowsFormsApplication1
                     button2.BackColor = Color.IndianRed;
                 }
             }
+            reader.Close();
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -200,6 +201,11 @@ namespace WindowsFormsApplication1
         public void dretvaLoading2()
         {
             loadanje.Close();
+        }
+
+        private void button20_Click(object sender, EventArgs e)
+        {
+
         }
 
 

@@ -35,7 +35,7 @@ namespace WindowsFormsApplication1
             List<Bacva> Bacve = new List<Bacva>();
             Bacva Bacvaa;
 
-            string sql = "SELECT Bacve.Zapremnina,Bacve.Podrum, SUM(Vino_u_bacvi.BrojLitara) AS Expr1, Bacve.Id FROM Bacve INNER JOIN Vino_u_bacvi ON Bacve.Id = Vino_u_bacvi.Id_bacve GROUP BY Bacve.Id, Bacve.Zapremnina, Bacve.Podrum";
+            string sql = "exec PodaciZaSortiranje";
             SqlDataReader myReader = Baza.Instance.DohvatiDataReader(sql);
             if (myReader.HasRows)
             {

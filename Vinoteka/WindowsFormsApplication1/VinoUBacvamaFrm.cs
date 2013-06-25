@@ -81,7 +81,7 @@ namespace WindowsFormsApplication1
                 double preostalo = ukupno - iskoristeno;
                 if (vinob.BrojLitara <= preostalo)
                 {
-                    object imavec = Baza.Instance.DohvatiVrijednost("select BrojLitara from Vino_u_bacvi where Id_bacve=" + vinob.Bacva + " and Id_vina=" + vinob.Vino + ";");
+                    object imavec = Baza.Instance.DohvatiVrijednost("exec BrojLitara @bacva="+vinob.Bacva+", @vino="+vinob.Vino);
                     if (imavec==null)
                     {
                         vinob.UnesiVinoUBacvu();
